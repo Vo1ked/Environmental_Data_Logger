@@ -1,0 +1,3 @@
+[submodule "VolkCoreEmbedded"]
+	path = VolkCoreEmbedded
+	url = git@github.com:Vo1ked/VolkCoreEmbedded.git
