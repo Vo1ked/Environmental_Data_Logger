@@ -1,3 +1,4 @@
 CompileFlags:
   CompilationDatabase: E:\Embedded\Environmental_Data_Logger\build
   Remove: [-m*, -f*]
+  BuiltinHeaders: QueryDriver

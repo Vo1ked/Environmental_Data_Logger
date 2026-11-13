@@ -1,14 +1,53 @@
-# put here your custom config value
-menu "Example Configuration"
-config ESP_WIFI_SSID
-    string "WiFi SSID"
-    default "myssid"
+menu "Environmental Data Logger"
+config EDL_SDA_GPIO
+    int "I2C SDA (RTC + OLED)"
+    range 0 48
+    default 8
+config EDL_SCL_GPIO
+    int "I2C SCL (RTC + OLED)"
+    range 0 48
+    default 9
+config EDL_MOSI_GPIO
+    int "BME280 SPI MOSI / SDI"
+    range 0 48
+    default 11
+config EDL_MISO_GPIO
+    int "BME280 SPI MISO / SDO"
+    range 0 48
+    default 13
+config EDL_SCLK_GPIO
+    int "BME280 SPI SCLK"
+    range 0 48
+    default 12
+config EDL_CS_GPIO
+    int "BME280 SPI CSB"
+    range 0 48
+    default 10
+config EDL_OLED_ADDRESS
+    hex "SSD1306 128x64 address"
+    range 0x3c 0x3d
+    default 0x3c
+config EDL_OLED_CONTRAST
+    int "OLED contrast (lower value reduces display current)"
+    range 0 255
+    default 32
+config EDL_UART_TX_GPIO
+    int "UART1 TX -> USB-TTL RXD"
+    range 0 48
+    default 17
+config EDL_UART_RX_GPIO
+    int "UART1 RX <- USB-TTL TXD (3.3 V logic)"
+    range 0 48
+    default 18
+config EDL_INITIAL_UTC
+    string "Initial RTC UTC (empty uses build time), YYYY-MM-DDTHH:MM:SSZ"
+    default ""
     help
-	SSID (network name) for the example to connect to.
-
-config ESP_WIFI_PASSWORD
-    string "WiFi Password"
-    default "mypassword"
+        Applied only to stopped or invalid RTC. Running clocks are preserved.
+        Build time is approximate. Use time set to correct UTC after flashing.
+config EDL_TIMEZONE
+    string "POSIX timezone for OLED (RTC and archive use UTC)"
+    default "EET-2EEST,M3.5.0/3,M10.5.0/4"
     help
-	WiFi password (WPA or WPA2) for the example to use.
+        Configurable Eastern European display rule. Use UTC0 for UTC display.
 endmenu
