@@ -20,7 +20,7 @@ static void supervise(app_t *app) {
 		app_watchdog_wait_for_reset(&app->watchdog);
 }
 
-static const char *mode(const manager_t *manager) { return manager->storage.error ? "ERROR" : manager->storage.full ? "FULL" : manager->logging ? "ON" : "OFF"; }
+static const char *mode(const manager_t *manager) { return manager->storage.error ? "ERROR" : manager->logging ? "ON" : "OFF"; }
 
 static void console_status(const manager_t *manager) {
 	char time[40] = "TIME unavailable", climate[80] = "T = -- C H = --% P = -- mmHg";
@@ -28,14 +28,14 @@ static void console_status(const manager_t *manager) {
 		app_time_format_uart(manager->sample.record.timestamp, time, sizeof(time));
 	if (manager->sample.climate_valid)
 		snprintf(climate, sizeof(climate), "T = %.1f C H = %.1f%% P = %" PRIu32 " mmHg", manager->sample.record.temperature / 100.0, manager->sample.record.humidity / 100.0, manager->sample.record.pressure);
-	ESP_LOGI("status", "%s: %s; RTC=%s BME280=%s OLED=%s; LOG %s; saved=%" PRIu32 " RAM=%" PRIu32 "/%u; flash=%s; sleep=%" PRIu32, time, climate, manager->sample.rtc_valid ? "OK" : "ERROR", manager->sample.climate_valid ? "OK" : "ERROR", manager->oled_ready ? "OK" : "ERROR", mode(manager), manager->storage.records, manager->storage.buffered, APP_RECORDS_PER_SECTOR,
+	ESP_LOGI("status", "%s: %s; RTC=%s BME280=%s OLED=%s; LOG %s; saved=%" PRIu32 " RAM=%" PRIu32 "/%u; flash=%s; sleep=%" PRIu32, time, climate, manager->sample.rtc_valid ? "OK" : "ERROR", manager->sample.climate_valid ? "OK" : "ERROR", manager->oled_ready ? "OK" : "ERROR", mode(manager), manager->storage.records, manager->storage.buffered, APP_BUFFER_RECORDS,
 			 esp_err_to_name(manager->storage.error), manager->sleeps);
 }
 
 static void status(app_t *app, const manager_t *manager) {
 	/* Console backpressure must not delay worker replies and their deadlines. */
-	app_print(app, 0, "WDT=ON; timeout=%u s; panic=ON; reset reason=%d\r\n", (unsigned)CONFIG_ESP_TASK_WDT_TIMEOUT_S, (int)esp_reset_reason());
-	app_print(app, 0, "LOG %s; N=%u min; saved=%" PRIu32 "; RAM=%" PRIu32 "/%u; occupied=%" PRIu32 "/%" PRIu32 " B; invalid=%" PRIu32 "; flash=%s\r\n", mode(manager), APP_LOG_INTERVAL_MINUTES, manager->storage.records, manager->storage.buffered, APP_RECORDS_PER_SECTOR, manager->storage.used_bytes, manager->storage.size, manager->storage.invalid_records, esp_err_to_name(manager->storage.error));
+	app_print(app, 0, "Archive=31 UTC days; WDT=ON; timeout=%u s; panic=ON; reset reason=%d\r\n", (unsigned)CONFIG_ESP_TASK_WDT_TIMEOUT_S, (int)esp_reset_reason());
+	app_print(app, 0, "LOG %s; N=%u s; saved=%" PRIu32 "; RAM=%" PRIu32 "/%u; occupied=%" PRIu32 "/%" PRIu32 " B; invalid=%" PRIu32 "; flash=%s\r\n", mode(manager), APP_LOG_INTERVAL_SECONDS, manager->storage.records, manager->storage.buffered, APP_BUFFER_RECORDS, manager->storage.used_bytes, manager->storage.size, manager->storage.invalid_records, esp_err_to_name(manager->storage.error));
 	app_print(app, 0, "RTC=%s BME280=%s OLED=%s; Light Sleep=%" PRIu32 "; sleep errors=%" PRIu32 "; missed cycles=%" PRIu32 "; skipped logs=%" PRIu32 "; busy sensor/display/flash=%u/%u/%u\r\n", manager->sample.rtc_valid ? "OK" : "ERROR", manager->sample.climate_valid ? "OK" : "ERROR", manager->oled_ready ? "OK" : "ERROR", manager->sleeps, manager->sleep_errors, manager->missed_cycles,
 			  manager->skipped_logs, manager->sensor_busy, manager->display_busy, manager->flash_busy);
 	if (manager->sample.rtc_valid) {
@@ -90,8 +90,8 @@ static void command(app_t *app, manager_t *manager, const app_command_t *command
 		return;
 	}
 	if (command->kind == APP_LOG_ON) {
-		if (manager->storage.error || manager->storage.full) {
-			app_print(app, 0, "ERROR: storage unavailable/full; inspect status, read or erase\r\n");
+		if (manager->storage.error) {
+			app_print(app, 0, "ERROR: storage unavailable; inspect status, read or erase\r\n");
 			return;
 		}
 		if (manager->flash_busy) {
@@ -99,7 +99,7 @@ static void command(app_t *app, manager_t *manager, const app_command_t *command
 			return;
 		}
 		if (!manager->logging)
-			manager->next_log = app_now_ms() + APP_LOG_INTERVAL_MINUTES * UINT64_C(60000);
+			manager->next_log = app_now_ms() + APP_LOG_INTERVAL_SECONDS * UINT64_C(1000);
 		manager->logging = true;
 		manager->dirty = true;
 		app_print(app, 0, "OK: logging ON\r\n");
@@ -139,7 +139,7 @@ static void sensor_result(app_t *app, manager_t *manager, const app_event_t *eve
 		logger_log(&app->logger, "app", event->success ? "RTC and BME280 available" : "Sensor unavailable; invalid fields are not archived");
 	const uint64_t now = app_now_ms();
 	if (manager->logging && now >= manager->next_log) {
-		manager->next_log += ((now - manager->next_log) / (APP_LOG_INTERVAL_MINUTES * UINT64_C(60000)) + 1) * APP_LOG_INTERVAL_MINUTES * UINT64_C(60000);
+		manager->next_log += ((now - manager->next_log) / (APP_LOG_INTERVAL_SECONDS * UINT64_C(1000)) + 1) * APP_LOG_INTERVAL_SECONDS * UINT64_C(1000);
 		const flash_request_t request = {.operation = FLASH_APPEND, .record = manager->sample.record};
 		if (!event->success || !request_flash(app, manager, &request)) {
 			++manager->skipped_logs;
@@ -152,7 +152,6 @@ static void flash_result(app_t *app, manager_t *manager, const app_event_t *even
 	app_watchdog_end(&app->watchdog, APP_WATCHDOG_FLASH);
 	supervise(app);
 	manager->flash_busy = false;
-	const bool was_full = manager->storage.full;
 	manager->storage = event->data.flash.status;
 	manager->dirty = true;
 	if (event->data.flash.operation == FLASH_SCAN) {
@@ -169,14 +168,12 @@ static void flash_result(app_t *app, manager_t *manager, const app_event_t *even
 		if (event->data.flash.operation == FLASH_ERASE && event->success && manager->sample.archived)
 			manager->sample = (app_sample_t){0};
 	}
-	if (manager->storage.error || manager->storage.full)
+	if (manager->storage.error)
 		manager->logging = false;
 	if (!event->success && event->data.flash.operation != FLASH_READ) {
 		manager->logging = false;
 		logger_error(&app->logger, "app", "Storage operation failed; logging stopped, RAM retained where possible");
 	}
-	if (manager->storage.full && !was_full)
-		logger_warning(&app->logger, "app", "FLASH FULL: logging stopped; old records preserved");
 }
 
 static void finish_sleep(app_t *app, manager_t *manager, bool paused) {
@@ -218,7 +215,7 @@ static void finish_sleep(app_t *app, manager_t *manager, bool paused) {
 void manager_task(void *argument) {
 	app_t *app = argument;
 	ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
-	manager_t manager = {.logging = true, .next_sample = app_now_ms(), .next_log = app_now_ms() + APP_LOG_INTERVAL_MINUTES * UINT64_C(60000)};
+	manager_t manager = {.logging = true, .next_sample = app_now_ms(), .next_log = app_now_ms() + APP_LOG_INTERVAL_SECONDS * UINT64_C(1000)};
 	const flash_request_t initial = {.operation = FLASH_SCAN};
 	ESP_ERROR_CHECK(request_flash(app, &manager, &initial) ? ESP_OK : ESP_FAIL);
 	for (;;) {

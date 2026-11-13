@@ -26,7 +26,7 @@ static void text(oled_SSD1306_t *oled, int x, int y, const char *value, unsigned
 static void draw(oled_SSD1306_t *oled, const display_request_t *view) {
 	char line[32], date[24] = "---- -- -- --:--:--";
 	const app_sample_t *sample = &view->sample;
-	const char *mode = view->storage.error ? "ERROR" : view->storage.full ? "FULL" : view->logging ? "ON" : "OFF";
+	const char *mode = view->storage.error ? "ERROR" : view->logging ? "ON" : "OFF";
 	oled_SSD1306_clear(oled, false);
 	snprintf(line, sizeof(line), "LOG %s  RAM:%" PRIu32, mode, view->storage.buffered);
 	text(oled, 0, 0, line, 1);
@@ -45,7 +45,7 @@ static void draw(oled_SSD1306_t *oled, const display_request_t *view) {
 		snprintf(line, sizeof(line), "T:-- H:-- P:--");
 	}
 	text(oled, 0, 45, line, 1);
-	snprintf(line, sizeof(line), "%" PRIu32 "/%" PRIu32 " KiB  N:%u m", view->storage.used_bytes / 1024, view->storage.size / 1024, APP_LOG_INTERVAL_MINUTES);
+	snprintf(line, sizeof(line), "%" PRIu32 "/%" PRIu32 " KiB  N:%u s", view->storage.used_bytes / 1024, view->storage.size / 1024, APP_LOG_INTERVAL_SECONDS);
 	text(oled, 0, 56, line, 1);
 }
 

@@ -20,15 +20,28 @@ static uint64_t get_le(const uint8_t *bytes, unsigned size) {
 	return value;
 }
 
+uint32_t record_crc32(const uint8_t *bytes, size_t size) {
+	uint32_t crc = UINT32_MAX;
+	for (size_t i = 0; i < size; ++i) {
+		crc ^= bytes[i];
+		for (unsigned bit = 0; bit < 8; ++bit)
+			crc = (crc >> 1) ^ (UINT32_C(0xedb88320) & (0U - (crc & 1U)));
+	}
+	return ~crc;
+}
+
 void record_encode(const app_record_t *record, uint8_t bytes[APP_RECORD_SIZE]) {
-	put_le(bytes, record->timestamp, 8);
-	put_le(bytes + 8, (uint16_t)record->temperature, 2);
-	put_le(bytes + 10, record->humidity, 2);
-	put_le(bytes + 12, record->pressure, 4);
+	put_le(bytes, record->timestamp, 4);
+	put_le(bytes + 4, (uint16_t)record->temperature, 2);
+	put_le(bytes + 6, record->humidity, 2);
+	put_le(bytes + 8, record->pressure, 4);
+	put_le(bytes + 12, record_crc32(bytes, 12), 4);
 }
 
 bool record_decode(const uint8_t bytes[APP_RECORD_SIZE], app_record_t *record) {
-	const uint16_t temperature = (uint16_t)get_le(bytes + 8, 2);
-	*record = (app_record_t){.timestamp = get_le(bytes, 8), .temperature = (int16_t)(temperature <= INT16_MAX ? (int32_t)temperature : (int32_t)temperature - 65536), .humidity = (uint16_t)get_le(bytes + 10, 2), .pressure = (uint32_t)get_le(bytes + 12, 4)};
+	if (get_le(bytes + 12, 4) != record_crc32(bytes, 12))
+		return false;
+	const uint16_t temperature = (uint16_t)get_le(bytes + 4, 2);
+	*record = (app_record_t){.timestamp = get_le(bytes, 4), .temperature = (int16_t)(temperature <= INT16_MAX ? (int32_t)temperature : (int32_t)temperature - 65536), .humidity = (uint16_t)get_le(bytes + 6, 2), .pressure = (uint32_t)get_le(bytes + 8, 4)};
 	return record_valid(record);
 }

@@ -32,7 +32,6 @@ typedef struct app_storage_status_t {
 	uint32_t buffered;
 	uint32_t invalid_records;
 	esp_err_t error;
-	bool full;
 	bool last_valid;
 	app_record_t last;
 } app_storage_status_t;
