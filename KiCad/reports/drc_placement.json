@@ -1,0 +1,2472 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-15T21:48:44",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.3",
+    "schematic_parity": [],
+    "source": "Environmental_Data_Logger.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 4 [RTC_SCL_5V] на M2",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 88.62
+                    },
+                    "uuid": "ee2155cd-abff-4c14-9431-4d780946859d"
+                },
+                {
+                    "description": "Конт. площадка 8 [RTC_SCL_5V] з U2 на F.Cu",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 90.025
+                    },
+                    "uuid": "99839d23-552f-4e5d-9404-7b1beea3a962"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 8 [RTC_SCL_5V] з U2 на F.Cu",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 90.025
+                    },
+                    "uuid": "99839d23-552f-4e5d-9404-7b1beea3a962"
+                },
+                {
+                    "description": "Конт. площадка 1 [RTC_SCL_5V] з TP9 на F.Cu",
+                    "pos": {
+                        "x": 99.0,
+                        "y": 81.0
+                    },
+                    "uuid": "46b9eb9f-561e-479e-98da-b458e5b46f63"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з TP3 на F.Cu",
+                    "pos": {
+                        "x": 67.0,
+                        "y": 69.0
+                    },
+                    "uuid": "e09bdfef-5d67-45d6-b8a8-14df5886bc5d"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C4 на F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 63.95
+                    },
+                    "uuid": "8864942b-9a90-41ff-95f0-0e16d3a70b4a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 2 [+3V3_ESP] на M1",
+                    "pos": {
+                        "x": 72.54,
+                        "y": 54.0
+                    },
+                    "uuid": "998f9aed-071c-4625-8704-e7c7acad1c72"
+                },
+                {
+                    "description": "PTH конт. площадка 1 [+3V3_ESP] на M1",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 54.0
+                    },
+                    "uuid": "00abd6ed-722e-4329-b0fd-c3e42815427e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 2 [+3V3_ESP] на M1",
+                    "pos": {
+                        "x": 72.54,
+                        "y": 54.0
+                    },
+                    "uuid": "998f9aed-071c-4625-8704-e7c7acad1c72"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C5 на F.Cu",
+                    "pos": {
+                        "x": 73.0,
+                        "y": 63.95
+                    },
+                    "uuid": "68cb5ae4-6eea-4817-9e1e-9bc6c7a874a0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C5 на F.Cu",
+                    "pos": {
+                        "x": 73.0,
+                        "y": 63.95
+                    },
+                    "uuid": "68cb5ae4-6eea-4817-9e1e-9bc6c7a874a0"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C4 на F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 63.95
+                    },
+                    "uuid": "8864942b-9a90-41ff-95f0-0e16d3a70b4a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C7 на F.Cu",
+                    "pos": {
+                        "x": 82.05,
+                        "y": 69.5
+                    },
+                    "uuid": "32ba4bdc-b973-4bb6-974e-dd5ae62eea27"
+                },
+                {
+                    "description": "Конт. площадка 5 [+3V3_ESP] з U3 на F.Cu",
+                    "pos": {
+                        "x": 84.1375,
+                        "y": 64.05
+                    },
+                    "uuid": "ff161696-5d47-4e22-a161-89d3d0858f3f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C7 на F.Cu",
+                    "pos": {
+                        "x": 82.05,
+                        "y": 69.5
+                    },
+                    "uuid": "32ba4bdc-b973-4bb6-974e-dd5ae62eea27"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C5 на F.Cu",
+                    "pos": {
+                        "x": 73.0,
+                        "y": 63.95
+                    },
+                    "uuid": "68cb5ae4-6eea-4817-9e1e-9bc6c7a874a0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C8 на F.Cu",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 97.95
+                    },
+                    "uuid": "295ae49b-ab51-4088-8574-4e54ebcd8a91"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з R5 на F.Cu",
+                    "pos": {
+                        "x": 105.0875,
+                        "y": 111.0
+                    },
+                    "uuid": "30037f89-14f4-4271-8f86-cb6d805d4302"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 3 [+3V3_ESP] з U2 на F.Cu",
+                    "pos": {
+                        "x": 97.3,
+                        "y": 91.325
+                    },
+                    "uuid": "b43c235e-fddd-4cb9-a2e0-3c6cd10d0230"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C8 на F.Cu",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 97.95
+                    },
+                    "uuid": "295ae49b-ab51-4088-8574-4e54ebcd8a91"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 3 [+3V3_ESP] з U2 на F.Cu",
+                    "pos": {
+                        "x": 97.3,
+                        "y": 91.325
+                    },
+                    "uuid": "b43c235e-fddd-4cb9-a2e0-3c6cd10d0230"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C7 на F.Cu",
+                    "pos": {
+                        "x": 82.05,
+                        "y": 69.5
+                    },
+                    "uuid": "32ba4bdc-b973-4bb6-974e-dd5ae62eea27"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 6 [+3V3_ESP] з U2 на F.Cu",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 91.325
+                    },
+                    "uuid": "bbdfedc6-091c-4232-b1d0-10df6fbcb56f"
+                },
+                {
+                    "description": "Конт. площадка 3 [+3V3_ESP] з U2 на F.Cu",
+                    "pos": {
+                        "x": 97.3,
+                        "y": 91.325
+                    },
+                    "uuid": "b43c235e-fddd-4cb9-a2e0-3c6cd10d0230"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 6 [+3V3_ESP] з U2 на F.Cu",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 91.325
+                    },
+                    "uuid": "bbdfedc6-091c-4232-b1d0-10df6fbcb56f"
+                },
+                {
+                    "description": "PTH конт. площадка 2 [+3V3_ESP] на M3",
+                    "pos": {
+                        "x": 124.54,
+                        "y": 86.0
+                    },
+                    "uuid": "be272f3e-2e94-4239-8ce6-cf0e04839b1f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з R5 на F.Cu",
+                    "pos": {
+                        "x": 105.0875,
+                        "y": 111.0
+                    },
+                    "uuid": "30037f89-14f4-4271-8f86-cb6d805d4302"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C13 на F.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 123.95
+                    },
+                    "uuid": "7243eb53-2d7c-4eb7-ac8d-cefd44d33591"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з R5 на F.Cu",
+                    "pos": {
+                        "x": 105.0875,
+                        "y": 111.0
+                    },
+                    "uuid": "30037f89-14f4-4271-8f86-cb6d805d4302"
+                },
+                {
+                    "description": "PTH конт. площадка 1 [+3V3_ESP] на M4",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 129.0
+                    },
+                    "uuid": "981e51f8-aad0-4bf4-8ddc-6692e4bc9f61"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C14 на F.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 129.95
+                    },
+                    "uuid": "7d901a35-35b3-4aa6-8cea-0b3e0c14fcda"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C13 на F.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 123.95
+                    },
+                    "uuid": "7243eb53-2d7c-4eb7-ac8d-cefd44d33591"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C11 на F.Cu",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 76.95
+                    },
+                    "uuid": "0705a4ee-dba1-4bb4-9422-baa4d1b326c4"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C12 на F.Cu",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 76.95
+                    },
+                    "uuid": "bd84c0ca-c132-4330-9dd0-cd7755389bd4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 2 [+3V3_ESP] на M3",
+                    "pos": {
+                        "x": 124.54,
+                        "y": 86.0
+                    },
+                    "uuid": "be272f3e-2e94-4239-8ce6-cf0e04839b1f"
+                },
+                {
+                    "description": "Конт. площадка 1 [+3V3_ESP] з C11 на F.Cu",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 76.95
+                    },
+                    "uuid": "0705a4ee-dba1-4bb4-9422-baa4d1b326c4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка SH [GND] на J1",
+                    "pos": {
+                        "x": 51.925,
+                        "y": 123.32
+                    },
+                    "uuid": "3f7c4252-e76e-4b3c-8f6f-67ee6ebee77f"
+                },
+                {
+                    "description": "PTH конт. площадка SH [GND] на J1",
+                    "pos": {
+                        "x": 56.105,
+                        "y": 123.32
+                    },
+                    "uuid": "f42fde1d-9218-48ae-b27f-47567933f7ca"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка SH [GND] на J1",
+                    "pos": {
+                        "x": 56.105,
+                        "y": 114.68
+                    },
+                    "uuid": "e10b4008-9e52-4086-8747-20d15c7451a2"
+                },
+                {
+                    "description": "Конт. площадка B12 [GND] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 115.8
+                    },
+                    "uuid": "2d05163a-4e60-4fbb-bcbd-a308af722128"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка SH [GND] на J1",
+                    "pos": {
+                        "x": 56.105,
+                        "y": 114.68
+                    },
+                    "uuid": "e10b4008-9e52-4086-8747-20d15c7451a2"
+                },
+                {
+                    "description": "PTH конт. площадка SH [GND] на J1",
+                    "pos": {
+                        "x": 51.925,
+                        "y": 114.68
+                    },
+                    "uuid": "0eb315d1-af86-42ee-b5c2-e6ba16acdda5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка SH [GND] на J1",
+                    "pos": {
+                        "x": 56.105,
+                        "y": 123.32
+                    },
+                    "uuid": "f42fde1d-9218-48ae-b27f-47567933f7ca"
+                },
+                {
+                    "description": "Конт. площадка B1 [GND] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 122.2
+                    },
+                    "uuid": "19e0fe20-7961-4c21-a953-c34636c17151"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка B1 [GND] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 122.2
+                    },
+                    "uuid": "19e0fe20-7961-4c21-a953-c34636c17151"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з R1 на F.Cu",
+                    "pos": {
+                        "x": 60.9125,
+                        "y": 124.0
+                    },
+                    "uuid": "f7b18bda-ffd3-40cf-b05e-94d127f64839"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка B1 [GND] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 122.2
+                    },
+                    "uuid": "19e0fe20-7961-4c21-a953-c34636c17151"
+                },
+                {
+                    "description": "Конт. площадка B12 [GND] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 115.8
+                    },
+                    "uuid": "2d05163a-4e60-4fbb-bcbd-a308af722128"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з R1 на F.Cu",
+                    "pos": {
+                        "x": 60.9125,
+                        "y": 124.0
+                    },
+                    "uuid": "f7b18bda-ffd3-40cf-b05e-94d127f64839"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з R2 на F.Cu",
+                    "pos": {
+                        "x": 60.9125,
+                        "y": 127.5
+                    },
+                    "uuid": "4d33ac71-8aac-438e-a8bb-ed01f89ef5b1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з R1 на F.Cu",
+                    "pos": {
+                        "x": 60.9125,
+                        "y": 124.0
+                    },
+                    "uuid": "f7b18bda-ffd3-40cf-b05e-94d127f64839"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з D1 на F.Cu",
+                    "pos": {
+                        "x": 62.5,
+                        "y": 119.95
+                    },
+                    "uuid": "32d36d22-d74d-404a-b6b3-c439dbca3b27"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з D1 на F.Cu",
+                    "pos": {
+                        "x": 62.5,
+                        "y": 119.95
+                    },
+                    "uuid": "32d36d22-d74d-404a-b6b3-c439dbca3b27"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з U1 на F.Cu",
+                    "pos": {
+                        "x": 68.1625,
+                        "y": 119.0
+                    },
+                    "uuid": "0fb51cf1-b3e4-4cd9-90af-f4106d083f7b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C1 на F.Cu",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 115.05
+                    },
+                    "uuid": "a5e47927-b9db-479d-9a03-a2e3f9a4b06f"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з U1 на F.Cu",
+                    "pos": {
+                        "x": 68.1625,
+                        "y": 119.0
+                    },
+                    "uuid": "0fb51cf1-b3e4-4cd9-90af-f4106d083f7b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C4 на F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 62.05
+                    },
+                    "uuid": "7beed178-137b-4eef-9112-63b1a85fb83d"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C5 на F.Cu",
+                    "pos": {
+                        "x": 73.0,
+                        "y": 62.05
+                    },
+                    "uuid": "1d60e5a6-d256-4ce6-acc2-a87bfa2029f6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з R6 на F.Cu",
+                    "pos": {
+                        "x": 69.9125,
+                        "y": 123.0
+                    },
+                    "uuid": "3bb4c3d9-0ceb-4b2c-be5a-561b3016c925"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з U1 на F.Cu",
+                    "pos": {
+                        "x": 68.1625,
+                        "y": 119.0
+                    },
+                    "uuid": "0fb51cf1-b3e4-4cd9-90af-f4106d083f7b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C2 на F.Cu",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 115.05
+                    },
+                    "uuid": "874d9ba4-0d0b-4f17-8fec-72282550e746"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з U1 на F.Cu",
+                    "pos": {
+                        "x": 68.1625,
+                        "y": 119.0
+                    },
+                    "uuid": "0fb51cf1-b3e4-4cd9-90af-f4106d083f7b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C3 на F.Cu",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 119.05
+                    },
+                    "uuid": "2b3d1c70-cf7c-4eba-9acd-beb221009013"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C2 на F.Cu",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 115.05
+                    },
+                    "uuid": "874d9ba4-0d0b-4f17-8fec-72282550e746"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з R4 на F.Cu",
+                    "pos": {
+                        "x": 77.5,
+                        "y": 68.0875
+                    },
+                    "uuid": "e36bbe20-72f4-4a35-9d9b-6033f9ee0d5c"
+                },
+                {
+                    "description": "Конт. площадка 3 [GND] з U3 на F.Cu",
+                    "pos": {
+                        "x": 81.8625,
+                        "y": 65.95
+                    },
+                    "uuid": "befe7bb4-ab06-49a8-a9c3-70564d05548e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з R4 на F.Cu",
+                    "pos": {
+                        "x": 77.5,
+                        "y": 68.0875
+                    },
+                    "uuid": "e36bbe20-72f4-4a35-9d9b-6033f9ee0d5c"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C5 на F.Cu",
+                    "pos": {
+                        "x": 73.0,
+                        "y": 62.05
+                    },
+                    "uuid": "1d60e5a6-d256-4ce6-acc2-a87bfa2029f6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [GND] з U3 на F.Cu",
+                    "pos": {
+                        "x": 81.8625,
+                        "y": 64.05
+                    },
+                    "uuid": "800ef58e-d537-44c6-9df7-90e2a0177250"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C6 на F.Cu",
+                    "pos": {
+                        "x": 87.5,
+                        "y": 63.05
+                    },
+                    "uuid": "3dc18fca-d001-43e0-8836-48d83341fb29"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 3 [GND] з U3 на F.Cu",
+                    "pos": {
+                        "x": 81.8625,
+                        "y": 65.95
+                    },
+                    "uuid": "befe7bb4-ab06-49a8-a9c3-70564d05548e"
+                },
+                {
+                    "description": "Конт. площадка 1 [GND] з U3 на F.Cu",
+                    "pos": {
+                        "x": 81.8625,
+                        "y": 64.05
+                    },
+                    "uuid": "800ef58e-d537-44c6-9df7-90e2a0177250"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C7 на F.Cu",
+                    "pos": {
+                        "x": 83.95,
+                        "y": 69.5
+                    },
+                    "uuid": "d87581c1-3d54-46b8-a47d-39bf12269d75"
+                },
+                {
+                    "description": "Конт. площадка 3 [GND] з U3 на F.Cu",
+                    "pos": {
+                        "x": 81.8625,
+                        "y": 65.95
+                    },
+                    "uuid": "befe7bb4-ab06-49a8-a9c3-70564d05548e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 1 [GND] на M2",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 81.0
+                    },
+                    "uuid": "5cc40863-2964-4e6d-bdfc-3634efc866ef"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C7 на F.Cu",
+                    "pos": {
+                        "x": 83.95,
+                        "y": 69.5
+                    },
+                    "uuid": "d87581c1-3d54-46b8-a47d-39bf12269d75"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 1 [GND] на M2",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 81.0
+                    },
+                    "uuid": "5cc40863-2964-4e6d-bdfc-3634efc866ef"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з U2 на F.Cu",
+                    "pos": {
+                        "x": 97.3,
+                        "y": 90.675
+                    },
+                    "uuid": "495920e3-9662-40a6-b73f-c74be845edf6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 2 [GND] на M4",
+                    "pos": {
+                        "x": 96.54,
+                        "y": 129.0
+                    },
+                    "uuid": "43eac3b4-230b-40de-b978-5823baf9ee1d"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C14 на F.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 128.05
+                    },
+                    "uuid": "1b88ca72-02a9-41b3-8984-bc2d30030e5a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 2 [GND] на M4",
+                    "pos": {
+                        "x": 96.54,
+                        "y": 129.0
+                    },
+                    "uuid": "43eac3b4-230b-40de-b978-5823baf9ee1d"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C3 на F.Cu",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 119.05
+                    },
+                    "uuid": "2b3d1c70-cf7c-4eba-9acd-beb221009013"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C8 на F.Cu",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 96.05
+                    },
+                    "uuid": "971b7ab3-2070-4909-91a2-ca0ed6287597"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C9 на F.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 96.05
+                    },
+                    "uuid": "62fc08b8-d954-4d36-9b2d-08932be8d33f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C8 на F.Cu",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 96.05
+                    },
+                    "uuid": "971b7ab3-2070-4909-91a2-ca0ed6287597"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з U2 на F.Cu",
+                    "pos": {
+                        "x": 97.3,
+                        "y": 90.675
+                    },
+                    "uuid": "495920e3-9662-40a6-b73f-c74be845edf6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C8 на F.Cu",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 96.05
+                    },
+                    "uuid": "971b7ab3-2070-4909-91a2-ca0ed6287597"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C10 на F.Cu",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 103.05
+                    },
+                    "uuid": "da0608d5-7b74-48ff-8d01-fa3274b83eab"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C10 на F.Cu",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 103.05
+                    },
+                    "uuid": "da0608d5-7b74-48ff-8d01-fa3274b83eab"
+                },
+                {
+                    "description": "PTH конт. площадка 2 [GND] на M4",
+                    "pos": {
+                        "x": 96.54,
+                        "y": 129.0
+                    },
+                    "uuid": "43eac3b4-230b-40de-b978-5823baf9ee1d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C13 на F.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 122.05
+                    },
+                    "uuid": "14879b91-003d-47e7-b29c-3827cfc5769c"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C14 на F.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 128.05
+                    },
+                    "uuid": "1b88ca72-02a9-41b3-8984-bc2d30030e5a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 1 [GND] на M3",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 86.0
+                    },
+                    "uuid": "b9173954-62fc-4f7d-b538-7d12386afc4b"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C9 на F.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 96.05
+                    },
+                    "uuid": "62fc08b8-d954-4d36-9b2d-08932be8d33f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C11 на F.Cu",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 75.05
+                    },
+                    "uuid": "7dbcf03f-1fc8-4c61-90f9-37d1af626670"
+                },
+                {
+                    "description": "PTH конт. площадка 1 [GND] на M3",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 86.0
+                    },
+                    "uuid": "b9173954-62fc-4f7d-b538-7d12386afc4b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C11 на F.Cu",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 75.05
+                    },
+                    "uuid": "7dbcf03f-1fc8-4c61-90f9-37d1af626670"
+                },
+                {
+                    "description": "Конт. площадка 1 [GND] з TP4 на F.Cu",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 64.0
+                    },
+                    "uuid": "fc131b51-8619-470e-a3dd-a47bdde0b7fe"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 22 [GND] на M1",
+                    "pos": {
+                        "x": 123.34,
+                        "y": 54.0
+                    },
+                    "uuid": "94957cca-906f-4cfd-a497-7457a877a91b"
+                },
+                {
+                    "description": "Конт. площадка 1 [GND] з TP4 на F.Cu",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 64.0
+                    },
+                    "uuid": "fc131b51-8619-470e-a3dd-a47bdde0b7fe"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [GND] з C12 на F.Cu",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 75.05
+                    },
+                    "uuid": "fd006bb2-7032-4257-822f-cad884b1d29d"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з C11 на F.Cu",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 75.05
+                    },
+                    "uuid": "7dbcf03f-1fc8-4c61-90f9-37d1af626670"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 5 [BME_CS] на M4",
+                    "pos": {
+                        "x": 104.16,
+                        "y": 129.0
+                    },
+                    "uuid": "460301df-ee8b-4fc1-85b5-8280565da866"
+                },
+                {
+                    "description": "Конт. площадка 2 [BME_CS] з R5 на F.Cu",
+                    "pos": {
+                        "x": 106.9125,
+                        "y": 111.0
+                    },
+                    "uuid": "6ddcf7eb-454a-4b48-90c7-73c58909abf0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [BME_CS] з R5 на F.Cu",
+                    "pos": {
+                        "x": 106.9125,
+                        "y": 111.0
+                    },
+                    "uuid": "6ddcf7eb-454a-4b48-90c7-73c58909abf0"
+                },
+                {
+                    "description": "PTH конт. площадка 16 [BME_CS] на M1",
+                    "pos": {
+                        "x": 108.1,
+                        "y": 54.0
+                    },
+                    "uuid": "1b2ca3b9-efdc-40fa-81c8-f141f2f38626"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 6 [+5V_SYS] з U1 на F.Cu",
+                    "pos": {
+                        "x": 69.8375,
+                        "y": 118.35
+                    },
+                    "uuid": "9d06fb0f-5a75-40c2-b8b4-c1647a1dc458"
+                },
+                {
+                    "description": "Конт. площадка 3 [+5V_SYS] з U1 на F.Cu",
+                    "pos": {
+                        "x": 68.1625,
+                        "y": 119.65
+                    },
+                    "uuid": "c49ac73e-5ff1-4b3f-8fd2-e092c88aae2d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 6 [+5V_SYS] з U1 на F.Cu",
+                    "pos": {
+                        "x": 69.8375,
+                        "y": 118.35
+                    },
+                    "uuid": "9d06fb0f-5a75-40c2-b8b4-c1647a1dc458"
+                },
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з C2 на F.Cu",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 116.95
+                    },
+                    "uuid": "6d10dc5f-8d63-433b-8e36-ce7d635c2a2d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з C2 на F.Cu",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 116.95
+                    },
+                    "uuid": "6d10dc5f-8d63-433b-8e36-ce7d635c2a2d"
+                },
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з C3 на F.Cu",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 120.95
+                    },
+                    "uuid": "dad3cffe-ec1c-4efe-8334-0ccd7a3d4f50"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з C3 на F.Cu",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 120.95
+                    },
+                    "uuid": "dad3cffe-ec1c-4efe-8334-0ccd7a3d4f50"
+                },
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з TP2 на F.Cu",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 119.0
+                    },
+                    "uuid": "730994b9-4f3f-4ade-b5d9-86ee9027c760"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з TP2 на F.Cu",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 119.0
+                    },
+                    "uuid": "730994b9-4f3f-4ade-b5d9-86ee9027c760"
+                },
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з C10 на F.Cu",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 104.95
+                    },
+                    "uuid": "5546741b-b2a1-4be2-a50a-01f8c4b622f9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 2 [+5V_SYS] на M2",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 83.54
+                    },
+                    "uuid": "ad7f4bbb-aac8-40ea-98de-bf2fa56fd55a"
+                },
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з R3 на F.Cu",
+                    "pos": {
+                        "x": 77.5,
+                        "y": 64.9125
+                    },
+                    "uuid": "a562d3b3-1d8f-421e-837c-9a68fea156bb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з C10 на F.Cu",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 104.95
+                    },
+                    "uuid": "5546741b-b2a1-4be2-a50a-01f8c4b622f9"
+                },
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з C9 на F.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 97.95
+                    },
+                    "uuid": "c672edff-64c1-4cf1-bd93-5c821fecc106"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 7 [+5V_SYS] з U2 на F.Cu",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 90.675
+                    },
+                    "uuid": "0ff54133-2da4-4bb9-b4f7-7c7ba9d8f6b6"
+                },
+                {
+                    "description": "PTH конт. площадка 2 [+5V_SYS] на M2",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 83.54
+                    },
+                    "uuid": "ad7f4bbb-aac8-40ea-98de-bf2fa56fd55a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+5V_SYS] з C9 на F.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 97.95
+                    },
+                    "uuid": "c672edff-64c1-4cf1-bd93-5c821fecc106"
+                },
+                {
+                    "description": "Конт. площадка 7 [+5V_SYS] з U2 на F.Cu",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 90.675
+                    },
+                    "uuid": "0ff54133-2da4-4bb9-b4f7-7c7ba9d8f6b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 21 [+5V_SYS] на M1",
+                    "pos": {
+                        "x": 120.8,
+                        "y": 54.0
+                    },
+                    "uuid": "481da423-b311-46e9-8d60-95c954c0734f"
+                },
+                {
+                    "description": "Конт. площадка 7 [+5V_SYS] з U2 на F.Cu",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 90.675
+                    },
+                    "uuid": "0ff54133-2da4-4bb9-b4f7-7c7ba9d8f6b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 4 [VIN_ADC] з U3 на F.Cu",
+                    "pos": {
+                        "x": 84.1375,
+                        "y": 65.95
+                    },
+                    "uuid": "0935e583-031f-4ded-b1c0-c5178a80101a"
+                },
+                {
+                    "description": "Конт. площадка 1 [VIN_ADC] з C6 на F.Cu",
+                    "pos": {
+                        "x": 87.5,
+                        "y": 64.95
+                    },
+                    "uuid": "9c38618e-a9ef-4aa0-9689-7290d93b8520"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [VIN_ADC] з C6 на F.Cu",
+                    "pos": {
+                        "x": 87.5,
+                        "y": 64.95
+                    },
+                    "uuid": "9c38618e-a9ef-4aa0-9689-7290d93b8520"
+                },
+                {
+                    "description": "Конт. площадка 1 [VIN_ADC] з TP5 на F.Cu",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 64.0
+                    },
+                    "uuid": "c9a06516-910d-4ff6-a36b-d62f719dddec"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [VIN_ADC] з TP5 на F.Cu",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 64.0
+                    },
+                    "uuid": "c9a06516-910d-4ff6-a36b-d62f719dddec"
+                },
+                {
+                    "description": "PTH конт. площадка 7 [VIN_ADC] на M1",
+                    "pos": {
+                        "x": 85.24,
+                        "y": 54.0
+                    },
+                    "uuid": "a6a065c6-8d2b-46ca-a4ba-20fc0d6924ed"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [POWER_ST] з R6 на F.Cu",
+                    "pos": {
+                        "x": 68.0875,
+                        "y": 123.0
+                    },
+                    "uuid": "ead804e6-b9a1-45e0-b42b-abc612473fd1"
+                },
+                {
+                    "description": "Конт. площадка 5 [POWER_ST] з U1 на F.Cu",
+                    "pos": {
+                        "x": 69.8375,
+                        "y": 119.0
+                    },
+                    "uuid": "86647b30-2479-4f25-8f97-bd456f6e0745"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [+5V_FUSED] з F1 на F.Cu",
+                    "pos": {
+                        "x": 61.5,
+                        "y": 114.1
+                    },
+                    "uuid": "851bfa96-efa9-466a-98be-bf9d7d27ca57"
+                },
+                {
+                    "description": "Конт. площадка 1 [+5V_FUSED] з C1 на F.Cu",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 116.95
+                    },
+                    "uuid": "3407382e-1c5f-4f9a-bc72-cb6021adcf4b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+5V_FUSED] з C1 на F.Cu",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 116.95
+                    },
+                    "uuid": "3407382e-1c5f-4f9a-bc72-cb6021adcf4b"
+                },
+                {
+                    "description": "Конт. площадка 1 [+5V_FUSED] з D1 на F.Cu",
+                    "pos": {
+                        "x": 62.5,
+                        "y": 122.05
+                    },
+                    "uuid": "64dc30fe-3307-440d-aa0a-141c02ce7018"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+5V_FUSED] з U1 на F.Cu",
+                    "pos": {
+                        "x": 68.1625,
+                        "y": 118.35
+                    },
+                    "uuid": "19d7b0e4-e5b2-4c13-93fd-30c327c15bee"
+                },
+                {
+                    "description": "Конт. площадка 1 [+5V_FUSED] з C1 на F.Cu",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 116.95
+                    },
+                    "uuid": "3407382e-1c5f-4f9a-bc72-cb6021adcf4b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [RTC_SDA_5V] з TP8 на F.Cu",
+                    "pos": {
+                        "x": 95.0,
+                        "y": 85.0
+                    },
+                    "uuid": "b3da9894-7c71-4101-9845-2ffd904bcfb6"
+                },
+                {
+                    "description": "PTH конт. площадка 3 [RTC_SDA_5V] на M2",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 86.08
+                    },
+                    "uuid": "a361e59f-1343-4593-b132-8044852dc505"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [RTC_SDA_5V] з U2 на F.Cu",
+                    "pos": {
+                        "x": 97.3,
+                        "y": 90.025
+                    },
+                    "uuid": "b60ea196-cd82-4836-a569-eaa503c3d311"
+                },
+                {
+                    "description": "Конт. площадка 1 [RTC_SDA_5V] з TP8 на F.Cu",
+                    "pos": {
+                        "x": 95.0,
+                        "y": 85.0
+                    },
+                    "uuid": "b3da9894-7c71-4101-9845-2ffd904bcfb6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 3 [SPI_SCK] на M4",
+                    "pos": {
+                        "x": 99.08,
+                        "y": 129.0
+                    },
+                    "uuid": "a2c75914-6bb8-4b49-b6bd-dc02c292bfa7"
+                },
+                {
+                    "description": "PTH конт. площадка 18 [SPI_SCK] на M1",
+                    "pos": {
+                        "x": 113.18,
+                        "y": 54.0
+                    },
+                    "uuid": "11e3fc6d-7003-4782-bd21-f1bf7cc113d0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 4 [SPI_MOSI] на M4",
+                    "pos": {
+                        "x": 101.62,
+                        "y": 129.0
+                    },
+                    "uuid": "80416d6b-b0f5-4160-b3f8-738266f7cc7e"
+                },
+                {
+                    "description": "PTH конт. площадка 17 [SPI_MOSI] на M1",
+                    "pos": {
+                        "x": 110.64,
+                        "y": 54.0
+                    },
+                    "uuid": "da6eb9c2-6ce3-40da-9614-93cea6438a92"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 6 [SPI_MISO] на M4",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 129.0
+                    },
+                    "uuid": "f0d6a12a-7030-486b-977e-5806a65af300"
+                },
+                {
+                    "description": "PTH конт. площадка 19 [SPI_MISO] на M1",
+                    "pos": {
+                        "x": 115.72,
+                        "y": 54.0
+                    },
+                    "uuid": "af4be30e-5e3e-4774-8724-9c3ac745e3b2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [VIN_DIV] з R4 на F.Cu",
+                    "pos": {
+                        "x": 77.5,
+                        "y": 69.9125
+                    },
+                    "uuid": "fd4d3773-b5fc-4358-92b3-5b06290bbc7f"
+                },
+                {
+                    "description": "Конт. площадка 2 [VIN_DIV] з U3 на F.Cu",
+                    "pos": {
+                        "x": 81.8625,
+                        "y": 65.0
+                    },
+                    "uuid": "b061f3a4-11dd-4984-82cb-b32941b907fd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 2 [VIN_DIV] з U3 на F.Cu",
+                    "pos": {
+                        "x": 81.8625,
+                        "y": 65.0
+                    },
+                    "uuid": "b061f3a4-11dd-4984-82cb-b32941b907fd"
+                },
+                {
+                    "description": "Конт. площадка 2 [VIN_DIV] з R3 на F.Cu",
+                    "pos": {
+                        "x": 77.5,
+                        "y": 63.0875
+                    },
+                    "uuid": "9d622b2e-6c3f-4bfa-b596-580b709f1199"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+5V_USB] з TP1 на F.Cu",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 110.0
+                    },
+                    "uuid": "21c728be-bc8b-4864-8bf4-7723d082bb08"
+                },
+                {
+                    "description": "Конт. площадка B9 [+5V_USB] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 116.6
+                    },
+                    "uuid": "89ea366d-7350-4d6a-930a-44a951a09606"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка B9 [+5V_USB] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 116.6
+                    },
+                    "uuid": "89ea366d-7350-4d6a-930a-44a951a09606"
+                },
+                {
+                    "description": "Конт. площадка A9 [+5V_USB] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 121.4
+                    },
+                    "uuid": "b34a92e8-d92b-497b-9527-ffcdf7017155"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [+5V_USB] з F1 на F.Cu",
+                    "pos": {
+                        "x": 61.5,
+                        "y": 116.9
+                    },
+                    "uuid": "38d50686-198b-4efa-8b7d-424cfc87ccae"
+                },
+                {
+                    "description": "Конт. площадка B9 [+5V_USB] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 116.6
+                    },
+                    "uuid": "89ea366d-7350-4d6a-930a-44a951a09606"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 5 [I2C_SCL] з U2 на F.Cu",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 91.975
+                    },
+                    "uuid": "3c8e58fe-3e1e-4401-b0d2-196d033fa5a5"
+                },
+                {
+                    "description": "PTH конт. площадка 3 [I2C_SCL] на M3",
+                    "pos": {
+                        "x": 127.08,
+                        "y": 86.0
+                    },
+                    "uuid": "a246b123-4a1e-4633-9672-aaa5456d20b1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [I2C_SCL] з TP7 на F.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 70.0
+                    },
+                    "uuid": "e5cd4eea-8905-4bb1-b860-76af8c3c7fdf"
+                },
+                {
+                    "description": "Конт. площадка 5 [I2C_SCL] з U2 на F.Cu",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 91.975
+                    },
+                    "uuid": "3c8e58fe-3e1e-4401-b0d2-196d033fa5a5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 15 [I2C_SCL] на M1",
+                    "pos": {
+                        "x": 105.56,
+                        "y": 54.0
+                    },
+                    "uuid": "eea9149f-f8bf-47f7-b57b-2a2c6f205ebc"
+                },
+                {
+                    "description": "Конт. площадка 1 [I2C_SCL] з TP7 на F.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 70.0
+                    },
+                    "uuid": "e5cd4eea-8905-4bb1-b860-76af8c3c7fdf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 4 [I2C_SDA] з U2 на F.Cu",
+                    "pos": {
+                        "x": 97.3,
+                        "y": 91.975
+                    },
+                    "uuid": "21ea9eea-366e-47fe-85cb-2f4ef479b3c8"
+                },
+                {
+                    "description": "PTH конт. площадка 4 [I2C_SDA] на M3",
+                    "pos": {
+                        "x": 129.62,
+                        "y": 86.0
+                    },
+                    "uuid": "46ca5d69-e6d5-4547-802f-8cfa2009996f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. площадка 12 [I2C_SDA] на M1",
+                    "pos": {
+                        "x": 97.94,
+                        "y": 54.0
+                    },
+                    "uuid": "f2339600-c4e4-4ad1-bef4-47fdfa3f7386"
+                },
+                {
+                    "description": "Конт. площадка 1 [I2C_SDA] з TP6 на F.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 70.0
+                    },
+                    "uuid": "cce91bd3-2604-4941-a440-9324e935983a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка 1 [I2C_SDA] з TP6 на F.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 70.0
+                    },
+                    "uuid": "cce91bd3-2604-4941-a440-9324e935983a"
+                },
+                {
+                    "description": "Конт. площадка 4 [I2C_SDA] з U2 на F.Cu",
+                    "pos": {
+                        "x": 97.3,
+                        "y": 91.975
+                    },
+                    "uuid": "21ea9eea-366e-47fe-85cb-2f4ef479b3c8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка A5 [CC1] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 117.75
+                    },
+                    "uuid": "3349ffa1-521a-4360-9932-ec1f5617584a"
+                },
+                {
+                    "description": "Конт. площадка 1 [CC1] з R1 на F.Cu",
+                    "pos": {
+                        "x": 59.0875,
+                        "y": 124.0
+                    },
+                    "uuid": "f71c3702-052b-414c-b15f-1864622b308f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. площадка B5 [CC2] з J1 на F.Cu",
+                    "pos": {
+                        "x": 56.68,
+                        "y": 120.75
+                    },
+                    "uuid": "65ba926c-cae9-45ca-8d70-df4561f439ea"
+                },
+                {
+                    "description": "Конт. площадка 1 [CC2] з R2 на F.Cu",
+                    "pos": {
+                        "x": 59.0875,
+                        "y": 127.5
+                    },
+                    "uuid": "d4768bfd-c5d8-4aa2-9b6f-ba5423e89375"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Слід 'BME280_SPI_Row6' не відповідає копії в бібліотеці 'EDL'",
+            "items": [
+                {
+                    "description": "Посадкове місце M4",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 129.0
+                    },
+                    "uuid": "4542e346-18c3-4dc5-b4df-18a565573319"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Слід 'Tiny_RTC_Row5' не відповідає копії в бібліотеці 'EDL'",
+            "items": [
+                {
+                    "description": "Посадкове місце M2",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 81.0
+                    },
+                    "uuid": "4d47c3e3-5986-4d9e-ad5c-ea0bcb045b6b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Слід 'OLED_SSD1306_Row4' не відповідає копії в бібліотеці 'EDL'",
+            "items": [
+                {
+                    "description": "Посадкове місце M3",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 86.0
+                    },
+                    "uuid": "a180a232-2b20-482e-b018-cb28b6a2f5ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Слід 'YD_ESP32_S3_LeftRow22' не відповідає копії в бібліотеці 'EDL'",
+            "items": [
+                {
+                    "description": "Посадкове місце M1",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 54.0
+                    },
+                    "uuid": "d0fecc98-78bb-4f3f-8a22-604def78f8f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7000 mm)",
+            "items": [
+                {
+                    "description": "PCB текст 'DISABLE RTC CHARGE' на F.Silkscreen",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 111.5
+                    },
+                    "uuid": "a86adcae-1847-4aa1-b8dc-651022d8901f"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7500 mm)",
+            "items": [
+                {
+                    "description": "PCB текст 'VBUS' на F.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 111.8
+                    },
+                    "uuid": "fb0767dd-7f20-4814-afce-e8e722a904b9"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7500 mm)",
+            "items": [
+                {
+                    "description": "PCB текст 'ANTENNA' на F.Silkscreen",
+                    "pos": {
+                        "x": 57.5,
+                        "y": 56.0
+                    },
+                    "uuid": "5aa23079-cefd-412c-9559-51472bc7edac"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7500 mm)",
+            "items": [
+                {
+                    "description": "PCB текст '3V3' на F.Silkscreen",
+                    "pos": {
+                        "x": 67.0,
+                        "y": 70.8
+                    },
+                    "uuid": "4a422ed1-c8d6-4d47-935d-2d35254d33f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7500 mm)",
+            "items": [
+                {
+                    "description": "PCB текст '5V' на F.Silkscreen",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 120.8
+                    },
+                    "uuid": "a6f4db3f-4de4-4648-a8ae-ec92d98f63c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7500 mm)",
+            "items": [
+                {
+                    "description": "PCB текст 'ADC' на F.Silkscreen",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 65.8
+                    },
+                    "uuid": "fc5ce3b6-7916-42ab-bfca-9538d9934d43"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7500 mm)",
+            "items": [
+                {
+                    "description": "PCB текст 'SDA5' на F.Silkscreen",
+                    "pos": {
+                        "x": 95.0,
+                        "y": 86.8
+                    },
+                    "uuid": "6bf8012a-4656-468d-9050-d44fa5b9bdde"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7500 mm)",
+            "items": [
+                {
+                    "description": "PCB текст 'SDA' на F.Silkscreen",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 71.8
+                    },
+                    "uuid": "e43380d6-7c71-4705-93c8-462a4ef65715"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7500 mm)",
+            "items": [
+                {
+                    "description": "PCB текст 'SCL5' на F.Silkscreen",
+                    "pos": {
+                        "x": 99.0,
+                        "y": 82.8
+                    },
+                    "uuid": "826c5011-c0e9-4ac1-903b-2b51626872ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7500 mm)",
+            "items": [
+                {
+                    "description": "PCB текст 'SCL' на F.Silkscreen",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 71.8
+                    },
+                    "uuid": "3f10bb94-8cdc-4ff0-a9a5-69f17b567470"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Висота тексту за межами діапазону (обмеження налаштування дошки висота тексту на шару шовкографії мінімальна висота 0,8000 mm; актуальна 0,7500 mm)",
+            "items": [
+                {
+                    "description": "PCB текст 'GND' на F.Silkscreen",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 65.8
+                    },
+                    "uuid": "4dc916d9-4755-4b36-bc23-ab609f35c32c"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB текст 'USB 5V IN' на F.Silkscreen",
+                    "pos": {
+                        "x": 60.5,
+                        "y": 112.0
+                    },
+                    "uuid": "31b834e1-0168-4ca7-9a61-60e1ee92b54f"
+                },
+                {
+                    "description": "PCB текст 'VBUS' на F.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 111.8
+                    },
+                    "uuid": "fb0767dd-7f20-4814-afce-e8e722a904b9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB текст 'USB 5V IN' на F.Silkscreen",
+                    "pos": {
+                        "x": 60.5,
+                        "y": 112.0
+                    },
+                    "uuid": "31b834e1-0168-4ca7-9a61-60e1ee92b54f"
+                },
+                {
+                    "description": "Поле посилання F1",
+                    "pos": {
+                        "x": 61.5,
+                        "y": 112.9
+                    },
+                    "uuid": "b4b31194-2cf0-44cc-8327-6fa3e871f9c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Поле посилання R6",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 120.4
+                    },
+                    "uuid": "05530572-f53e-4c69-bfd1-3f1ddf3f1186"
+                },
+                {
+                    "description": "Сегмент з U1 на F.Silkscreen",
+                    "pos": {
+                        "x": 69.735,
+                        "y": 120.11
+                    },
+                    "uuid": "754e358b-2ec2-4491-8163-41a92fd548ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Поле посилання R6",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 120.4
+                    },
+                    "uuid": "05530572-f53e-4c69-bfd1-3f1ddf3f1186"
+                },
+                {
+                    "description": "Сегмент з U1 на F.Silkscreen",
+                    "pos": {
+                        "x": 68.265,
+                        "y": 120.11
+                    },
+                    "uuid": "4ef10529-9190-4444-b9ad-0903e949f158"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Сегмент з R1 на F.Silkscreen",
+                    "pos": {
+                        "x": 59.772936,
+                        "y": 124.735
+                    },
+                    "uuid": "12a95274-26f9-4880-8212-439092bc75da"
+                },
+                {
+                    "description": "Поле посилання R2",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 124.9
+                    },
+                    "uuid": "50451a3b-86a1-4454-b258-ed8cbe5fe3e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Сегмент з U3 на F.Silkscreen",
+                    "pos": {
+                        "x": 83.91,
+                        "y": 66.56
+                    },
+                    "uuid": "20e01d28-5b3f-4e0b-8d04-3029a4606317"
+                },
+                {
+                    "description": "Поле посилання C7",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 66.9
+                    },
+                    "uuid": "d535206d-73a2-44cd-874b-71b7183face0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Поле посилання R2",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 124.9
+                    },
+                    "uuid": "50451a3b-86a1-4454-b258-ed8cbe5fe3e2"
+                },
+                {
+                    "description": "Конт. площадка 1 [CC1] з R1 на F.Cu",
+                    "pos": {
+                        "x": 59.0875,
+                        "y": 124.0
+                    },
+                    "uuid": "f71c3702-052b-414c-b15f-1864622b308f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Поле посилання R2",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 124.9
+                    },
+                    "uuid": "50451a3b-86a1-4454-b258-ed8cbe5fe3e2"
+                },
+                {
+                    "description": "Конт. площадка 2 [GND] з R1 на F.Cu",
+                    "pos": {
+                        "x": 60.9125,
+                        "y": 124.0
+                    },
+                    "uuid": "f7b18bda-ffd3-40cf-b05e-94d127f64839"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

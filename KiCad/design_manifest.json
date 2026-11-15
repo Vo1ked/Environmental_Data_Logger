@@ -1,0 +1,658 @@
+[
+  {
+    "ref": "J1",
+    "value": "USB4105-GF-A",
+    "symbol": "USB_C_Receptacle_USB2.0_16P",
+    "footprint": "EDL:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+    "mpn": "USB4105-GF-A",
+    "note": "",
+    "dnp": false,
+    "uuid": "c190dc2d-0766-5c12-a1e3-0f4c09412507",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "A4": "+5V_USB",
+      "A9": "+5V_USB",
+      "B4": "+5V_USB",
+      "B9": "+5V_USB",
+      "A1": "GND",
+      "A12": "GND",
+      "B1": "GND",
+      "B12": "GND",
+      "SH": "GND",
+      "A5": "CC1",
+      "B5": "CC2"
+    }
+  },
+  {
+    "ref": "R1",
+    "value": "5.1k 1%",
+    "symbol": "R",
+    "footprint": "EDL:R_0805_2012Metric",
+    "mpn": "0805 5.1k 1%",
+    "note": "",
+    "dnp": false,
+    "uuid": "4d3230e8-de22-5629-bdc9-1eeeb5664edf",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "CC1",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "R2",
+    "value": "5.1k 1%",
+    "symbol": "R",
+    "footprint": "EDL:R_0805_2012Metric",
+    "mpn": "0805 5.1k 1%",
+    "note": "",
+    "dnp": false,
+    "uuid": "c91cc885-76f1-51f8-89b9-63cabd44c61b",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "CC2",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "F1",
+    "value": "1A fast",
+    "symbol": "Fuse",
+    "footprint": "EDL:Fuse_1206_3216Metric",
+    "mpn": "0466001.NR",
+    "note": "Verify supplier resistance; test RTC rail >=4.5V under full load",
+    "dnp": false,
+    "uuid": "830d7d45-5027-50b6-a265-15fc26941c9a",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_USB",
+      "2": "+5V_FUSED"
+    }
+  },
+  {
+    "ref": "D1",
+    "value": "PESD5V0S1BA",
+    "symbol": "D_TVS",
+    "footprint": "EDL:D_SOD-323",
+    "mpn": "PESD5V0S1BA",
+    "note": "ESD protection, not sustained overvoltage protection",
+    "dnp": false,
+    "uuid": "279e18f0-ce75-5653-9c1a-2dc7775f4cbb",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_FUSED",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C1",
+    "value": "1u 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "5aef8494-2227-591c-8392-cd5b04de55c5",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_FUSED",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "U1",
+    "value": "LM66100DCKR",
+    "symbol": "LM66100DCK",
+    "footprint": "EDL:SOT-363_SC-70-6",
+    "mpn": "LM66100DCKR",
+    "note": "CE tied to VOUT for reverse-current blocking; NC pin 4 open; unused ST held low via R6",
+    "dnp": false,
+    "uuid": "7a9e5855-6263-514a-935d-cdf0d908c055",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_FUSED",
+      "2": "GND",
+      "3": "+5V_SYS",
+      "5": "POWER_ST",
+      "6": "+5V_SYS"
+    }
+  },
+  {
+    "ref": "R6",
+    "value": "10k 1%",
+    "symbol": "R",
+    "footprint": "EDL:R_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "4ff68f08-ea04-540f-a8dc-06557c08a38a",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "POWER_ST",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C2",
+    "value": "4.7u 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "88613e7b-e0be-55aa-a33f-515d5b56423d",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_SYS",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C3",
+    "value": "100n 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "1657d71e-fa47-55fa-bdb2-e60b5785c150",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_SYS",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "#FLG01",
+    "value": "PWR_FLAG",
+    "symbol": "PWR_FLAG",
+    "footprint": "",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "a3714446-0893-55e2-ab7c-525cb2202d7f",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "#FLG02",
+    "value": "PWR_FLAG",
+    "symbol": "PWR_FLAG",
+    "footprint": "",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "8c9281f6-00ad-5094-b344-d1621dd0dba4",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_USB"
+    }
+  },
+  {
+    "ref": "#FLG03",
+    "value": "PWR_FLAG",
+    "symbol": "PWR_FLAG",
+    "footprint": "",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "f84c2861-888b-5df0-93d7-0405b036bdd5",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_FUSED"
+    }
+  },
+  {
+    "ref": "M1",
+    "value": "YD-ESP32-S3",
+    "symbol": "YD_ESP32_S3_LeftRow22",
+    "footprint": "EDL:YD_ESP32_S3_LeftRow22",
+    "mpn": "",
+    "note": "IN-OUT OPEN; USB-OTG OPEN; use onboard CH343P USB for commands",
+    "dnp": false,
+    "uuid": "12900c03-8480-5a21-a02e-cdcb16d0a6bc",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "+3V3_ESP",
+      "7": "VIN_ADC",
+      "12": "I2C_SDA",
+      "15": "I2C_SCL",
+      "16": "BME_CS",
+      "17": "SPI_MOSI",
+      "18": "SPI_SCK",
+      "19": "SPI_MISO",
+      "21": "+5V_SYS",
+      "22": "GND"
+    }
+  },
+  {
+    "ref": "C4",
+    "value": "4.7u 10V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "b62bd336-9867-550f-ace8-9c9661a1c869",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C5",
+    "value": "100n 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "a5c273bd-438d-595c-ab76-d4e423808273",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "R3",
+    "value": "27k 1%",
+    "symbol": "R",
+    "footprint": "EDL:R_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "6af43232-2dcb-56cc-bed9-a64c34d22e8b",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_SYS",
+      "2": "VIN_DIV"
+    }
+  },
+  {
+    "ref": "R4",
+    "value": "10k 1%",
+    "symbol": "R",
+    "footprint": "EDL:R_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "dc0e9579-ce53-5a1a-93a6-b41c53676535",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "VIN_DIV",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "U3",
+    "value": "SN74CBTLV1G125DBVR",
+    "symbol": "SN74CBTLV1G125DBV",
+    "footprint": "EDL:SOT-23-5",
+    "mpn": "SN74CBTLV1G125DBVR",
+    "note": "Ioff isolates ADC divider when ESP 3V3 is absent",
+    "dnp": false,
+    "uuid": "302409da-9ee9-5135-ad1f-c4136a92308c",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "GND",
+      "2": "VIN_DIV",
+      "3": "GND",
+      "4": "VIN_ADC",
+      "5": "+3V3_ESP"
+    }
+  },
+  {
+    "ref": "C6",
+    "value": "100n 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "3ea728e5-57c8-51a6-9175-2fdfaee6dadd",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "VIN_ADC",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C7",
+    "value": "100n 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "c44691dd-fc51-562a-b307-09062ea2967f",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "TP1",
+    "value": "+5V_USB",
+    "symbol": "TestPoint",
+    "footprint": "EDL:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "ac5ab99e-104e-5039-ad09-d48ff8bf319e",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_USB"
+    }
+  },
+  {
+    "ref": "TP2",
+    "value": "+5V_SYS",
+    "symbol": "TestPoint",
+    "footprint": "EDL:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "42323751-1e1a-5b5f-819a-78e2df49c5ab",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+5V_SYS"
+    }
+  },
+  {
+    "ref": "TP3",
+    "value": "+3V3_ESP",
+    "symbol": "TestPoint",
+    "footprint": "EDL:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "42f8d020-9d96-5145-a3eb-e2ce3653ecbd",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP"
+    }
+  },
+  {
+    "ref": "TP4",
+    "value": "GND",
+    "symbol": "TestPoint",
+    "footprint": "EDL:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "68640a1d-2958-5850-8a2a-90f56e435dff",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "TP5",
+    "value": "VIN_ADC",
+    "symbol": "TestPoint",
+    "footprint": "EDL:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "f4b8e951-ebfe-540d-b858-6b83c2f01fe7",
+    "sheet": "Environmental_Data_Logger.kicad_sch",
+    "nets": {
+      "1": "VIN_ADC"
+    }
+  },
+  {
+    "ref": "U2",
+    "value": "TCA9406DCTR",
+    "symbol": "TCA9406DC",
+    "footprint": "EDL:SSOP-8_2.95x2.8mm_P0.65mm",
+    "mpn": "TCA9406DCTR",
+    "note": "Partial-power-down isolation; internal 10k pulls on both sides",
+    "dnp": false,
+    "uuid": "c0331c88-55e5-5c1b-9994-0fd35465cdbf",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "RTC_SDA_5V",
+      "2": "GND",
+      "3": "+3V3_ESP",
+      "4": "I2C_SDA",
+      "5": "I2C_SCL",
+      "6": "+3V3_ESP",
+      "7": "+5V_SYS",
+      "8": "RTC_SCL_5V"
+    }
+  },
+  {
+    "ref": "M2",
+    "value": "Tiny RTC / DS1307",
+    "symbol": "Tiny_RTC_Row5",
+    "footprint": "EDL:Tiny_RTC_Row5",
+    "mpn": "",
+    "note": "CR2032; disable charging path and verify VBAT network before installation",
+    "dnp": false,
+    "uuid": "00f29345-8e76-5dc3-afc8-61807f7bf781",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "GND",
+      "2": "+5V_SYS",
+      "3": "RTC_SDA_5V",
+      "4": "RTC_SCL_5V"
+    }
+  },
+  {
+    "ref": "C8",
+    "value": "100n 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "aa736938-9641-5335-afb1-382a73e87d2d",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C9",
+    "value": "100n 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "b172921d-4454-5642-86df-3e12b07c2384",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "+5V_SYS",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C10",
+    "value": "100n 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "824e41b5-2b0e-566d-9576-474900231a04",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "+5V_SYS",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "M3",
+    "value": "SSD1306 128x64",
+    "symbol": "OLED_SSD1306_Row4",
+    "footprint": "EDL:OLED_SSD1306_Row4",
+    "mpn": "",
+    "note": "Front view: GND VDD SCK SDA; SCK means I2C SCL",
+    "dnp": false,
+    "uuid": "90413984-ef27-59c6-ac9f-0ef1e4697373",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "GND",
+      "2": "+3V3_ESP",
+      "3": "I2C_SCL",
+      "4": "I2C_SDA"
+    }
+  },
+  {
+    "ref": "C11",
+    "value": "100n 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "827a48b3-7b00-54d6-855d-82006e116650",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C12",
+    "value": "1u 10V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "3d91828e-911c-5e4b-93c3-ec8c1b56d414",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "M4",
+    "value": "GY-BME280 / SPI",
+    "symbol": "BME280_SPI_Row6",
+    "footprint": "EDL:BME280_SPI_Row6",
+    "mpn": "",
+    "note": "Keep away from ESP/regulator heat; inspect sensor ID 0x60",
+    "dnp": false,
+    "uuid": "af686b0f-cdbc-5d72-8a7e-94f3de0f423f",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "GND",
+      "3": "SPI_SCK",
+      "4": "SPI_MOSI",
+      "5": "BME_CS",
+      "6": "SPI_MISO"
+    }
+  },
+  {
+    "ref": "R5",
+    "value": "10k 1%",
+    "symbol": "R",
+    "footprint": "EDL:R_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "7a4cb6c6-bf8f-54b8-a3c7-904ceb9936c3",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "BME_CS"
+    }
+  },
+  {
+    "ref": "C13",
+    "value": "100n 16V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "8bc34247-f578-5532-b976-b2f15152d49f",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C14",
+    "value": "1u 10V X7R",
+    "symbol": "C",
+    "footprint": "EDL:C_0805_2012Metric",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "103b0b90-30f9-5a6d-adcb-3ac2dd947001",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "+3V3_ESP",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "TP6",
+    "value": "I2C_SDA",
+    "symbol": "TestPoint",
+    "footprint": "EDL:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "e45206de-fd28-570f-8225-8385b2ea6ed3",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "I2C_SDA"
+    }
+  },
+  {
+    "ref": "TP7",
+    "value": "I2C_SCL",
+    "symbol": "TestPoint",
+    "footprint": "EDL:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "f2eb9378-ab09-593d-9db7-1b5577566f74",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "I2C_SCL"
+    }
+  },
+  {
+    "ref": "TP8",
+    "value": "RTC_SDA_5V",
+    "symbol": "TestPoint",
+    "footprint": "EDL:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "e549b35d-2c29-51e3-b94e-3e3dedbb884a",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "RTC_SDA_5V"
+    }
+  },
+  {
+    "ref": "TP9",
+    "value": "RTC_SCL_5V",
+    "symbol": "TestPoint",
+    "footprint": "EDL:TestPoint_Pad_D1.5mm",
+    "mpn": "",
+    "note": "",
+    "dnp": false,
+    "uuid": "26d9c7c0-4110-5493-b20c-7e2e691dede7",
+    "sheet": "modules.kicad_sch",
+    "nets": {
+      "1": "RTC_SCL_5V"
+    }
+  }
+]

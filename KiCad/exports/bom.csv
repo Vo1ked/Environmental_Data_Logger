@@ -1,0 +1,40 @@
+﻿Reference,Value,MPN,Footprint,Assembly notes
+J1,USB4105-GF-A,USB4105-GF-A,EDL:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,
+R1,5.1k 1%,0805 5.1k 1%,EDL:R_0805_2012Metric,
+R2,5.1k 1%,0805 5.1k 1%,EDL:R_0805_2012Metric,
+F1,1A fast,0466001.NR,EDL:Fuse_1206_3216Metric,Verify supplier resistance; test RTC rail >=4.5V under full load
+D1,PESD5V0S1BA,PESD5V0S1BA,EDL:D_SOD-323,"ESD protection, not sustained overvoltage protection"
+C1,1u 16V X7R,,EDL:C_0805_2012Metric,
+U1,LM66100DCKR,LM66100DCKR,EDL:SOT-363_SC-70-6,CE tied to VOUT for reverse-current blocking; NC pin 4 open; unused ST held low via R6
+R6,10k 1%,,EDL:R_0805_2012Metric,
+C2,4.7u 16V X7R,,EDL:C_0805_2012Metric,
+C3,100n 16V X7R,,EDL:C_0805_2012Metric,
+M1,YD-ESP32-S3,,EDL:YD_ESP32_S3_LeftRow22,IN-OUT OPEN; USB-OTG OPEN; use onboard CH343P USB for commands
+C4,4.7u 10V X7R,,EDL:C_0805_2012Metric,
+C5,100n 16V X7R,,EDL:C_0805_2012Metric,
+R3,27k 1%,,EDL:R_0805_2012Metric,
+R4,10k 1%,,EDL:R_0805_2012Metric,
+U3,SN74CBTLV1G125DBVR,SN74CBTLV1G125DBVR,EDL:SOT-23-5,Ioff isolates ADC divider when ESP 3V3 is absent
+C6,100n 16V X7R,,EDL:C_0805_2012Metric,
+C7,100n 16V X7R,,EDL:C_0805_2012Metric,
+TP1,+5V_USB,,EDL:TestPoint_Pad_D1.5mm,
+TP2,+5V_SYS,,EDL:TestPoint_Pad_D1.5mm,
+TP3,+3V3_ESP,,EDL:TestPoint_Pad_D1.5mm,
+TP4,GND,,EDL:TestPoint_Pad_D1.5mm,
+TP5,VIN_ADC,,EDL:TestPoint_Pad_D1.5mm,
+U2,TCA9406DCTR,TCA9406DCTR,EDL:SSOP-8_2.95x2.8mm_P0.65mm,Partial-power-down isolation; internal 10k pulls on both sides
+M2,Tiny RTC / DS1307,,EDL:Tiny_RTC_Row5,CR2032; disable charging path and verify VBAT network before installation
+C8,100n 16V X7R,,EDL:C_0805_2012Metric,
+C9,100n 16V X7R,,EDL:C_0805_2012Metric,
+C10,100n 16V X7R,,EDL:C_0805_2012Metric,
+M3,SSD1306 128x64,,EDL:OLED_SSD1306_Row4,Front view: GND VDD SCK SDA; SCK means I2C SCL
+C11,100n 16V X7R,,EDL:C_0805_2012Metric,
+C12,1u 10V X7R,,EDL:C_0805_2012Metric,
+M4,GY-BME280 / SPI,,EDL:BME280_SPI_Row6,Keep away from ESP/regulator heat; inspect sensor ID 0x60
+R5,10k 1%,,EDL:R_0805_2012Metric,
+C13,100n 16V X7R,,EDL:C_0805_2012Metric,
+C14,1u 10V X7R,,EDL:C_0805_2012Metric,
+TP6,I2C_SDA,,EDL:TestPoint_Pad_D1.5mm,
+TP7,I2C_SCL,,EDL:TestPoint_Pad_D1.5mm,
+TP8,RTC_SDA_5V,,EDL:TestPoint_Pad_D1.5mm,
+TP9,RTC_SCL_5V,,EDL:TestPoint_Pad_D1.5mm,

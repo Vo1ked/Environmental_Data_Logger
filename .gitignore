@@ -54,3 +54,10 @@ dkms.conf
 # debug information files
 *.dwo
 build
+
+*.kicad_prl
+*.lck
+~*.lck
+*-backups/
+tools/.cache/
+tools/__pycache__/

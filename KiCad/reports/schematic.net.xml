@@ -1,0 +1,1697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>E:\Embedded\Environmental_Data_Logger\KiCad\Environmental_Data_Logger.kicad_sch</source>
+    <date>2026-11-15T22:13:07</date>
+    <tool>Eeschema 10.0.3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>01 Power / ESP / ADC</title>
+        <company>Environmental Data Logger</company>
+        <rev>A1</rev>
+        <date>2026-11-15</date>
+        <source>Environmental_Data_Logger.kicad_sch</source>
+        <comment number="1" value="Prototype: verify module fit before manufacture"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/">
+      <title_block>
+        <title>02 Sensors / RTC / display</title>
+        <company>Environmental Data Logger</company>
+        <rev>A1</rev>
+        <date>2026-11-15</date>
+        <source>modules.kicad_sch</source>
+        <comment number="1" value="Prototype: verify module fit before manufacture"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>1u 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5aef8494-2227-591c-8392-cd5b04de55c5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>4.7u 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88613e7b-e0be-55aa-a33f-515d5b56423d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100n 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1657d71e-fa47-55fa-bdb2-e60b5785c150</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>4.7u 10V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b62bd336-9867-550f-ace8-9c9661a1c869</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100n 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a5c273bd-438d-595c-ab76-d4e423808273</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100n 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3ea728e5-57c8-51a6-9175-2fdfaee6dadd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100n 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c44691dd-fc51-562a-b307-09062ea2967f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>PESD5V0S1BA</value>
+      <footprint>EDL:D_SOD-323</footprint>
+      <description>Bidirectional transient-voltage-suppression diode</description>
+      <fields>
+        <field name="MPN">PESD5V0S1BA</field>
+        <field name="Assembly">ESD protection, not sustained overvoltage protection</field>
+        <field name="Footprint">EDL:D_SOD-323</field>
+        <field name="Datasheet"/>
+        <field name="Description">Bidirectional transient-voltage-suppression diode</field>
+      </fields>
+      <libsource lib="EDL" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
+      <property name="MPN" value="PESD5V0S1BA"/>
+      <property name="Assembly" value="ESD protection, not sustained overvoltage protection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="diode TVS thyrector"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>279e18f0-ce75-5653-9c1a-2dc7775f4cbb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>1A fast</value>
+      <footprint>EDL:Fuse_1206_3216Metric</footprint>
+      <description>Fuse</description>
+      <fields>
+        <field name="MPN">0466001.NR</field>
+        <field name="Assembly">Verify supplier resistance; test RTC rail &gt;=4.5V under full load</field>
+        <field name="Footprint">EDL:Fuse_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Fuse</field>
+      </fields>
+      <libsource lib="EDL" part="Fuse" description="Fuse"/>
+      <property name="MPN" value="0466001.NR"/>
+      <property name="Assembly" value="Verify supplier resistance; test RTC rail &gt;=4.5V under full load"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>830d7d45-5027-50b6-a265-15fc26941c9a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>USB4105-GF-A</value>
+      <footprint>EDL:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <description>USB 2.0-only 16P Type-C Receptacle connector</description>
+      <fields>
+        <field name="MPN">USB4105-GF-A</field>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
+      </fields>
+      <libsource lib="EDL" part="USB_C_Receptacle_USB2.0_16P" description="USB 2.0-only 16P Type-C Receptacle connector"/>
+      <property name="MPN" value="USB4105-GF-A"/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
+      <property name="ki_fp_filters" value="USB*C*Receptacle*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c190dc2d-0766-5c12-a1e3-0f4c09412507</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="SH"/>
+            <pin num="A1"/>
+            <pin num="A12"/>
+            <pin num="B1"/>
+            <pin num="B12"/>
+            <pin num="A4"/>
+            <pin num="A9"/>
+            <pin num="B4"/>
+            <pin num="B9"/>
+            <pin num="A5"/>
+            <pin num="B5"/>
+            <pin num="A7"/>
+            <pin num="B7"/>
+            <pin num="A6"/>
+            <pin num="B6"/>
+            <pin num="A8"/>
+            <pin num="B8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="M1">
+      <value>YD-ESP32-S3</value>
+      <footprint>EDL:YD_ESP32_S3_LeftRow22</footprint>
+      <description>YD-ESP32-S3 J1 left row only; IN-OUT and USB-OTG OPEN</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly">IN-OUT OPEN; USB-OTG OPEN; use onboard CH343P USB for commands</field>
+        <field name="Footprint">EDL:YD_ESP32_S3_LeftRow22</field>
+        <field name="Datasheet"/>
+        <field name="Description">YD-ESP32-S3 J1 left row only; IN-OUT and USB-OTG OPEN</field>
+      </fields>
+      <libsource lib="EDL" part="YD_ESP32_S3_LeftRow22" description="YD-ESP32-S3 J1 left row only; IN-OUT and USB-OTG OPEN"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value="IN-OUT OPEN; USB-OTG OPEN; use onboard CH343P USB for commands"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>12900c03-8480-5a21-a02e-cdcb16d0a6bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>5.1k 1%</value>
+      <footprint>EDL:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">0805 5.1k 1%</field>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="EDL" part="R" description="Resistor"/>
+      <property name="MPN" value="0805 5.1k 1%"/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d3230e8-de22-5629-bdc9-1eeeb5664edf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>5.1k 1%</value>
+      <footprint>EDL:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN">0805 5.1k 1%</field>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="EDL" part="R" description="Resistor"/>
+      <property name="MPN" value="0805 5.1k 1%"/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c91cc885-76f1-51f8-89b9-63cabd44c61b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>27k 1%</value>
+      <footprint>EDL:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="EDL" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6af43232-2dcb-56cc-bed9-a64c34d22e8b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>10k 1%</value>
+      <footprint>EDL:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="EDL" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dc0e9579-ce53-5a1a-93a6-b41c53676535</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10k 1%</value>
+      <footprint>EDL:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="EDL" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4ff68f08-ea04-540f-a8dc-06557c08a38a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>+5V_USB</value>
+      <footprint>EDL:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="EDL" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac5ab99e-104e-5039-ad09-d48ff8bf319e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>+5V_SYS</value>
+      <footprint>EDL:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="EDL" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>42323751-1e1a-5b5f-819a-78e2df49c5ab</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>+3V3_ESP</value>
+      <footprint>EDL:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="EDL" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>42f8d020-9d96-5145-a3eb-e2ce3653ecbd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP4">
+      <value>GND</value>
+      <footprint>EDL:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="EDL" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68640a1d-2958-5850-8a2a-90f56e435dff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP5">
+      <value>VIN_ADC</value>
+      <footprint>EDL:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="EDL" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4b8e951-ebfe-540d-b858-6b83c2f01fe7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>LM66100DCKR</value>
+      <footprint>EDL:SOT-363_SC-70-6</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/lm66100.pdf</datasheet>
+      <description>Ideal Diode With Input Polarity Protection 1.5 - 5.5V  Input Voltage, 1.5A Output Current, Ron 141 mOhm, SC-70-6</description>
+      <fields>
+        <field name="MPN">LM66100DCKR</field>
+        <field name="Assembly">CE tied to VOUT for reverse-current blocking; NC pin 4 open; unused ST held low via R6</field>
+        <field name="Footprint">EDL:SOT-363_SC-70-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/lm66100.pdf</field>
+        <field name="Description">Ideal Diode With Input Polarity Protection 1.5 - 5.5V  Input Voltage, 1.5A Output Current, Ron 141 mOhm, SC-70-6</field>
+      </fields>
+      <libsource lib="EDL" part="LM66100DCK" description="Ideal Diode With Input Polarity Protection 1.5 - 5.5V  Input Voltage, 1.5A Output Current, Ron 141 mOhm, SC-70-6"/>
+      <property name="MPN" value="LM66100DCKR"/>
+      <property name="Assembly" value="CE tied to VOUT for reverse-current blocking; NC pin 4 open; unused ST held low via R6"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <property name="ki_keywords" value="Texas Instruments"/>
+      <property name="ki_fp_filters" value="*SC?70*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a9e5855-6263-514a-935d-cdf0d908c055</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>SN74CBTLV1G125DBVR</value>
+      <footprint>EDL:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74cbtlv1g125.pdf</datasheet>
+      <fields>
+        <field name="MPN">SN74CBTLV1G125DBVR</field>
+        <field name="Assembly">Ioff isolates ADC divider when ESP 3V3 is absent</field>
+        <field name="Footprint">EDL:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74cbtlv1g125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EDL" part="SN74CBTLV1G125DBV" description=""/>
+      <property name="MPN" value="SN74CBTLV1G125DBVR"/>
+      <property name="Assembly" value="Ioff isolates ADC divider when ESP 3V3 is absent"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Environmental_Data_Logger.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>302409da-9ee9-5135-ad1f-c4136a92308c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="5"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100n 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>aa736938-9641-5335-afb1-382a73e87d2d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>100n 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>b172921d-4454-5642-86df-3e12b07c2384</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100n 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>824e41b5-2b0e-566d-9576-474900231a04</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100n 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>827a48b3-7b00-54d6-855d-82006e116650</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>1u 10V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>3d91828e-911c-5e4b-93c3-ec8c1b56d414</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>100n 16V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>8bc34247-f578-5532-b976-b2f15152d49f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>1u 10V X7R</value>
+      <footprint>EDL:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="EDL" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>103b0b90-30f9-5a6d-adcb-3ac2dd947001</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="M2">
+      <value>Tiny RTC / DS1307</value>
+      <footprint>EDL:Tiny_RTC_Row5</footprint>
+      <description>Tiny RTC DS1307 module; CR2032 charging path MUST be disabled</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly">CR2032; disable charging path and verify VBAT network before installation</field>
+        <field name="Footprint">EDL:Tiny_RTC_Row5</field>
+        <field name="Datasheet"/>
+        <field name="Description">Tiny RTC DS1307 module; CR2032 charging path MUST be disabled</field>
+      </fields>
+      <libsource lib="EDL" part="Tiny_RTC_Row5" description="Tiny RTC DS1307 module; CR2032 charging path MUST be disabled"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value="CR2032; disable charging path and verify VBAT network before installation"/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>00f29345-8e76-5dc3-afc8-61807f7bf781</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="M3">
+      <value>SSD1306 128x64</value>
+      <footprint>EDL:OLED_SSD1306_Row4</footprint>
+      <description>I2C OLED module front view: GND VDD SCK SDA</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly">Front view: GND VDD SCK SDA; SCK means I2C SCL</field>
+        <field name="Footprint">EDL:OLED_SSD1306_Row4</field>
+        <field name="Datasheet"/>
+        <field name="Description">I2C OLED module front view: GND VDD SCK SDA</field>
+      </fields>
+      <libsource lib="EDL" part="OLED_SSD1306_Row4" description="I2C OLED module front view: GND VDD SCK SDA"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value="Front view: GND VDD SCK SDA; SCK means I2C SCL"/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>90413984-ef27-59c6-ac9f-0ef1e4697373</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="M4">
+      <value>GY-BME280 / SPI</value>
+      <footprint>EDL:BME280_SPI_Row6</footprint>
+      <description>GY-BME/P280 module; verify BME280 chip ID 0x60</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly">Keep away from ESP/regulator heat; inspect sensor ID 0x60</field>
+        <field name="Footprint">EDL:BME280_SPI_Row6</field>
+        <field name="Datasheet"/>
+        <field name="Description">GY-BME/P280 module; verify BME280 chip ID 0x60</field>
+      </fields>
+      <libsource lib="EDL" part="BME280_SPI_Row6" description="GY-BME/P280 module; verify BME280 chip ID 0x60"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value="Keep away from ESP/regulator heat; inspect sensor ID 0x60"/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>af686b0f-cdbc-5d72-8a7e-94f3de0f423f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>10k 1%</value>
+      <footprint>EDL:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="EDL" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>7a4cb6c6-bf8f-54b8-a3c7-904ceb9936c3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>I2C_SDA</value>
+      <footprint>EDL:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="EDL" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>e45206de-fd28-570f-8225-8385b2ea6ed3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP7">
+      <value>I2C_SCL</value>
+      <footprint>EDL:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="EDL" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>f2eb9378-ab09-593d-9db7-1b5577566f74</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP8">
+      <value>RTC_SDA_5V</value>
+      <footprint>EDL:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="EDL" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>e549b35d-2c29-51e3-b94e-3e3dedbb884a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP9">
+      <value>RTC_SCL_5V</value>
+      <footprint>EDL:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="MPN"/>
+        <field name="Assembly"/>
+        <field name="Footprint">EDL:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="EDL" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Assembly" value=""/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>26d9c7c0-4110-5493-b20c-7e2e691dede7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>TCA9406DCTR</value>
+      <footprint>EDL:SSOP-8_2.95x2.8mm_P0.65mm</footprint>
+      <datasheet>www.ti.com/lit/ds/symlink/tca9406.pdf</datasheet>
+      <description>2-Bit Bidirectional 1-MHz, I2C Bus and SMBus Voltage-Level Translator With 8-kV HBM ESD</description>
+      <fields>
+        <field name="MPN">TCA9406DCTR</field>
+        <field name="Assembly">Partial-power-down isolation; internal 10k pulls on both sides</field>
+        <field name="Footprint">EDL:SSOP-8_2.95x2.8mm_P0.65mm</field>
+        <field name="Datasheet">www.ti.com/lit/ds/symlink/tca9406.pdf</field>
+        <field name="Description">2-Bit Bidirectional 1-MHz, I2C Bus and SMBus Voltage-Level Translator With 8-kV HBM ESD</field>
+      </fields>
+      <libsource lib="EDL" part="TCA9406DC" description="2-Bit Bidirectional 1-MHz, I2C Bus and SMBus Voltage-Level Translator With 8-kV HBM ESD"/>
+      <property name="MPN" value="TCA9406DCTR"/>
+      <property name="Assembly" value="Partial-power-down isolation; internal 10k pulls on both sides"/>
+      <property name="Sheetname" value="02 - Modules and I2C level translation"/>
+      <property name="Sheetfile" value="modules.kicad_sch"/>
+      <property name="ki_keywords" value="Bidirectional 1-MHz I2C SMBus Voltage-Level Translator 8kV HBM ESD"/>
+      <property name="ki_fp_filters" value="SSOP*2.95x2.8mm*P0.65mm* VSSOP*2.3x2mm*P0.5mm*"/>
+      <sheetpath names="/02 - Modules and I2C level translation/" tstamps="/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7/"/>
+      <tstamps>c0331c88-55e5-5c1b-9994-0fd35465cdbf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="EDL" part="BME280_SPI_Row6">
+      <description>GY-BME/P280 module; verify BME280 chip ID 0x60</description>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">BME280_SPI_Row6</field>
+        <field name="Footprint">EDL:BME280_SPI_Row6</field>
+        <field name="Datasheet"/>
+        <field name="Description">GY-BME/P280 module; verify BME280 chip ID 0x60</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC_3V3" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="SCL_SCK" type="input"/>
+        <pin num="4" name="SDA_SDI" type="input"/>
+        <pin num="5" name="CSB" type="input"/>
+        <pin num="6" name="SDO" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="D_TVS">
+      <description>Bidirectional transient-voltage-suppression diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_TVS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Bidirectional transient-voltage-suppression diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="Fuse">
+      <description>Fuse</description>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="LM66100DCK">
+      <description>Ideal Diode With Input Polarity Protection 1.5 - 5.5V  Input Voltage, 1.5A Output Current, Ron 141 mOhm, SC-70-6</description>
+      <docs>https://www.ti.com/lit/ds/symlink/lm66100.pdf</docs>
+      <footprints>
+        <fp>*SC?70*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM66100DCK</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-363_SC-70-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/lm66100.pdf</field>
+        <field name="Description">Ideal Diode With Input Polarity Protection 1.5 - 5.5V  Input Voltage, 1.5A Output Current, Ron 141 mOhm, SC-70-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="~{CE}" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="ST" type="open_collector"/>
+        <pin num="6" name="VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="OLED_SSD1306_Row4">
+      <description>I2C OLED module front view: GND VDD SCK SDA</description>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">OLED_SSD1306_Row4</field>
+        <field name="Footprint">EDL:OLED_SSD1306_Row4</field>
+        <field name="Datasheet"/>
+        <field name="Description">I2C OLED module front view: GND VDD SCK SDA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VDD_3V3" type="power_in"/>
+        <pin num="3" name="SCK_SCL" type="input"/>
+        <pin num="4" name="SDA" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="SN74CBTLV1G125DBV">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74cbtlv1g125.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74CBTLV1G125DBV</field>
+        <field name="Footprint">EDL:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74cbtlv1g125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="~{OE}" type="input"/>
+        <pin num="2" name="A" type="passive"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="B" type="passive"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="TCA9406DC">
+      <description>2-Bit Bidirectional 1-MHz, I2C Bus and SMBus Voltage-Level Translator With 8-kV HBM ESD</description>
+      <docs>www.ti.com/lit/ds/symlink/tca9406.pdf</docs>
+      <footprints>
+        <fp>SSOP*2.95x2.8mm*P0.65mm*</fp>
+        <fp>VSSOP*2.3x2mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TCA9406DC</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">www.ti.com/lit/ds/symlink/tca9406.pdf</field>
+        <field name="Description">2-Bit Bidirectional 1-MHz, I2C Bus and SMBus Voltage-Level Translator With 8-kV HBM ESD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA_B" type="bidirectional"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VCCA" type="power_in"/>
+        <pin num="4" name="SDA_A" type="bidirectional"/>
+        <pin num="5" name="SCL_A" type="bidirectional"/>
+        <pin num="6" name="OE" type="input"/>
+        <pin num="7" name="VCCB" type="power_in"/>
+        <pin num="8" name="SCL_B" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="TestPoint">
+      <description>test point</description>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="Tiny_RTC_Row5">
+      <description>Tiny RTC DS1307 module; CR2032 charging path MUST be disabled</description>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">Tiny_RTC_Row5</field>
+        <field name="Footprint">EDL:Tiny_RTC_Row5</field>
+        <field name="Datasheet"/>
+        <field name="Description">Tiny RTC DS1307 module; CR2032 charging path MUST be disabled</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VCC_5V" type="power_in"/>
+        <pin num="3" name="SDA" type="bidirectional"/>
+        <pin num="4" name="SCL" type="input"/>
+        <pin num="5" name="DS_1WIRE_UNUSED" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="USB_C_Receptacle_USB2.0_16P">
+      <description>USB 2.0-only 16P Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_C_Receptacle_USB2.0_16P</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A8" name="SBU1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B6" name="D+" type="bidirectional"/>
+        <pin num="B7" name="D-" type="bidirectional"/>
+        <pin num="B8" name="SBU2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="SH" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EDL" part="YD_ESP32_S3_LeftRow22">
+      <description>YD-ESP32-S3 J1 left row only; IN-OUT and USB-OTG OPEN</description>
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">YD_ESP32_S3_LeftRow22</field>
+        <field name="Footprint">EDL:YD_ESP32_S3_LeftRow22</field>
+        <field name="Datasheet"/>
+        <field name="Description">YD-ESP32-S3 J1 left row only; IN-OUT and USB-OTG OPEN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="power_out"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="GPIO4" type="bidirectional"/>
+        <pin num="5" name="GPIO5" type="bidirectional"/>
+        <pin num="6" name="GPIO6" type="bidirectional"/>
+        <pin num="7" name="GPIO7_/_ADC1_CH6" type="input"/>
+        <pin num="8" name="GPIO15" type="bidirectional"/>
+        <pin num="9" name="GPIO16" type="bidirectional"/>
+        <pin num="10" name="GPIO17" type="bidirectional"/>
+        <pin num="11" name="GPIO18" type="bidirectional"/>
+        <pin num="12" name="GPIO8_/_SDA" type="bidirectional"/>
+        <pin num="13" name="GPIO3" type="bidirectional"/>
+        <pin num="14" name="GPIO46" type="bidirectional"/>
+        <pin num="15" name="GPIO9_/_SCL" type="bidirectional"/>
+        <pin num="16" name="GPIO10_/_CS" type="output"/>
+        <pin num="17" name="GPIO11_/_MOSI" type="output"/>
+        <pin num="18" name="GPIO12_/_SCK" type="output"/>
+        <pin num="19" name="GPIO13_/_MISO" type="input"/>
+        <pin num="20" name="GPIO14" type="bidirectional"/>
+        <pin num="21" name="5V_IN" type="power_in"/>
+        <pin num="22" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="EDL">
+      <uri>${KIPRJMOD}/EDL.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3_ESP" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="M1" pin="1" pinfunction="3V3_1" pintype="power_out"/>
+      <node ref="M1" pin="2" pinfunction="3V3_2" pintype="passive"/>
+      <node ref="M3" pin="2" pinfunction="VDD_3V3_2" pintype="power_in"/>
+      <node ref="M4" pin="1" pinfunction="VCC_3V3_1" pintype="power_in"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="VCCA_3" pintype="power_in"/>
+      <node ref="U2" pin="6" pinfunction="OE_6" pintype="input"/>
+      <node ref="U3" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+    </net>
+    <net code="2" name="+5V_SYS" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="M1" pin="21" pinfunction="5V_IN_21" pintype="power_in"/>
+      <node ref="M2" pin="2" pinfunction="VCC_5V_2" pintype="power_in"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="~{CE}_3" pintype="input"/>
+      <node ref="U1" pin="6" pinfunction="VOUT_6" pintype="power_out"/>
+      <node ref="U2" pin="7" pinfunction="VCCB_7" pintype="power_in"/>
+    </net>
+    <net code="3" name="/+5V_FUSED" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="A1_1" pintype="passive"/>
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VIN_1" pintype="power_in"/>
+    </net>
+    <net code="4" name="/+5V_USB" class="Default">
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J1" pin="A4" pinfunction="VBUS_A4" pintype="passive"/>
+      <node ref="J1" pin="A9" pinfunction="VBUS_A9" pintype="passive"/>
+      <node ref="J1" pin="B4" pinfunction="VBUS_B4" pintype="passive"/>
+      <node ref="J1" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="5" name="/02 - Modules and I2C level translation/RTC_SCL_5V" class="Default">
+      <node ref="M2" pin="4" pinfunction="SCL_4" pintype="input"/>
+      <node ref="TP9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="SCL_B_8" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/02 - Modules and I2C level translation/RTC_SDA_5V" class="Default">
+      <node ref="M2" pin="3" pinfunction="SDA_3" pintype="bidirectional"/>
+      <node ref="TP8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="SDA_B_1" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/POWER_ST" class="Default">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="ST_5" pintype="open_collector"/>
+    </net>
+    <net code="8" name="/VIN_ADC" class="Default">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="M1" pin="7" pinfunction="GPIO7_/_ADC1_CH6_7" pintype="input"/>
+      <node ref="TP5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="B_4" pintype="passive"/>
+    </net>
+    <net code="9" name="/VIN_DIV" class="Default">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="A_2" pintype="passive"/>
+    </net>
+    <net code="10" name="BME_CS" class="Default">
+      <node ref="M1" pin="16" pinfunction="GPIO10_/_CS_16" pintype="output"/>
+      <node ref="M4" pin="5" pinfunction="CSB_5" pintype="input"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A2_2" pintype="passive"/>
+      <node ref="J1" pin="A1" pinfunction="GND_A1" pintype="passive"/>
+      <node ref="J1" pin="A12" pinfunction="GND_A12" pintype="passive"/>
+      <node ref="J1" pin="B1" pinfunction="GND_B1" pintype="passive"/>
+      <node ref="J1" pin="B12" pinfunction="GND_B12" pintype="passive"/>
+      <node ref="J1" pin="SH" pinfunction="SHIELD_SH" pintype="passive"/>
+      <node ref="M1" pin="22" pinfunction="GND_22" pintype="power_in"/>
+      <node ref="M2" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="M3" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="M4" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U3" pin="1" pinfunction="~{OE}_1" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="GND_3" pintype="power_in"/>
+    </net>
+    <net code="12" name="I2C_SCL" class="Default">
+      <node ref="M1" pin="15" pinfunction="GPIO9_/_SCL_15" pintype="bidirectional"/>
+      <node ref="M3" pin="3" pinfunction="SCK_SCL_3" pintype="input"/>
+      <node ref="TP7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="SCL_A_5" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="I2C_SDA" class="Default">
+      <node ref="M1" pin="12" pinfunction="GPIO8_/_SDA_12" pintype="bidirectional"/>
+      <node ref="M3" pin="4" pinfunction="SDA_4" pintype="bidirectional"/>
+      <node ref="TP6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="SDA_A_4" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="Net-(J1-CC1)" class="Default">
+      <node ref="J1" pin="A5" pinfunction="CC1_A5" pintype="bidirectional"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(J1-CC2)" class="Default">
+      <node ref="J1" pin="B5" pinfunction="CC2_B5" pintype="bidirectional"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="16" name="SPI_MISO" class="Default">
+      <node ref="M1" pin="19" pinfunction="GPIO13_/_MISO_19" pintype="input"/>
+      <node ref="M4" pin="6" pinfunction="SDO_6" pintype="output"/>
+    </net>
+    <net code="17" name="SPI_MOSI" class="Default">
+      <node ref="M1" pin="17" pinfunction="GPIO11_/_MOSI_17" pintype="output"/>
+      <node ref="M4" pin="4" pinfunction="SDA_SDI_4" pintype="input"/>
+    </net>
+    <net code="18" name="SPI_SCK" class="Default">
+      <node ref="M1" pin="18" pinfunction="GPIO12_/_SCK_18" pintype="output"/>
+      <node ref="M4" pin="3" pinfunction="SCL_SCK_3" pintype="input"/>
+    </net>
+    <net code="19" name="unconnected-(J1-D+-PadA6)" class="Default">
+      <node ref="J1" pin="A6" pinfunction="D+_A6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(J1-D+-PadB6)" class="Default">
+      <node ref="J1" pin="B6" pinfunction="D+_B6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(J1-D--PadA7)" class="Default">
+      <node ref="J1" pin="A7" pinfunction="D-_A7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(J1-D--PadB7)" class="Default">
+      <node ref="J1" pin="B7" pinfunction="D-_B7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(J1-SBU1-PadA8)" class="Default">
+      <node ref="J1" pin="A8" pinfunction="SBU1_A8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(J1-SBU2-PadB8)" class="Default">
+      <node ref="J1" pin="B8" pinfunction="SBU2_B8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(M1-EN-Pad3)" class="Default">
+      <node ref="M1" pin="3" pinfunction="EN_3" pintype="input+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(M1-GPIO3-Pad13)" class="Default">
+      <node ref="M1" pin="13" pinfunction="GPIO3_13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(M1-GPIO4-Pad4)" class="Default">
+      <node ref="M1" pin="4" pinfunction="GPIO4_4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(M1-GPIO5-Pad5)" class="Default">
+      <node ref="M1" pin="5" pinfunction="GPIO5_5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(M1-GPIO6-Pad6)" class="Default">
+      <node ref="M1" pin="6" pinfunction="GPIO6_6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(M1-GPIO14-Pad20)" class="Default">
+      <node ref="M1" pin="20" pinfunction="GPIO14_20" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(M1-GPIO15-Pad8)" class="Default">
+      <node ref="M1" pin="8" pinfunction="GPIO15_8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(M1-GPIO16-Pad9)" class="Default">
+      <node ref="M1" pin="9" pinfunction="GPIO16_9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(M1-GPIO17-Pad10)" class="Default">
+      <node ref="M1" pin="10" pinfunction="GPIO17_10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(M1-GPIO18-Pad11)" class="Default">
+      <node ref="M1" pin="11" pinfunction="GPIO18_11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(M1-GPIO46-Pad14)" class="Default">
+      <node ref="M1" pin="14" pinfunction="GPIO46_14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(M2-DS_1WIRE_UNUSED-Pad5)" class="Default">
+      <node ref="M2" pin="5" pinfunction="DS_1WIRE_UNUSED_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U1-NC-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-15T22:04:26",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.3",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/00312c57-20e6-48e3-8808-307c8d4bf376",
+            "violations": []
+        },
+        {
+            "path": "/02 - Modules and I2C level translation/",
+            "uuid_path": "/00312c57-20e6-48e3-8808-307c8d4bf376/1b053dfd-bfe5-5772-a8ed-84c0147a8ee7",
+            "violations": []
+        }
+    ],
+    "source": "Environmental_Data_Logger.kicad_sch"
+}

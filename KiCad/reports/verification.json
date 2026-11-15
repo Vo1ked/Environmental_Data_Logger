@@ -1,0 +1,14 @@
+{
+  "kicad_version": "10.0.3",
+  "schematic_pcb_connected_net_groups_match": 18,
+  "electrical_footprints": 39,
+  "mounting_holes": 4,
+  "tracks": 314,
+  "vias": 34,
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "hardware_tested": false,
+  "mechanical_fit_confirmed": false,
+  "firmware_built": false
+}
