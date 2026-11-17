@@ -61,3 +61,4 @@ build
 *-backups/
 tools/.cache/
 tools/__pycache__/
+KiCad/.history
