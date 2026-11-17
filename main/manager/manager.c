@@ -159,7 +159,7 @@ static void flash_result(app_t *app, manager_t *manager, const app_event_t *even
 		if (manager->storage.last_valid) {
 			manager->sample = (app_sample_t){.record = manager->storage.last, .rtc_valid = true, .climate_valid = true, .archived = true};
 			manager->next_sample = app_now_ms() + 1500;
-			app_print(app, 0, "Archive restored; showing last saved measurement\r\n");
+			logger_log(&app->logger, "app", "Archive restored; showing last saved measurement");
 		}
 		logger_log(&app->logger, "app", "Startup scan complete; type status for storage details");
 	} else if (event->data.flash.operation != FLASH_APPEND) {
@@ -198,7 +198,7 @@ static void finish_sleep(app_t *app, manager_t *manager, bool paused) {
 			result = esp_light_sleep_start();
 		if (result == ESP_OK) {
 			++manager->sleeps;
-			if (esp_sleep_get_wakeup_causes() & (1U << ESP_SLEEP_WAKEUP_UART1))
+			if (esp_sleep_get_wakeup_causes() & (1U << ESP_SLEEP_WAKEUP_UART0))
 				resume = UART_RESUME_INPUT;
 		} else {
 			++manager->sleep_errors;

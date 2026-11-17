@@ -31,9 +31,10 @@ bool app_print(app_t *app, TickType_t timeout, const char *format, ...) {
 }
 
 static void diagnostic_sender(void *context, log_message_type_t type, const char *tag, const char *text) {
+	(void)context;
 	static const char *const levels[] = {"LOG", "WARN", "ERROR"};
 	const unsigned level = (unsigned)type <= LOG_MESSAGE_TYPE_ERROR ? (unsigned)type : LOG_MESSAGE_TYPE_ERROR;
-	(void)app_print(context, 0, "[%s][%s] %s\r\n", levels[level], tag, text);
+	printf("[%s][%s] %s\n", levels[level], tag, text);
 }
 
 bool app_i2c_ready(app_t *app) {

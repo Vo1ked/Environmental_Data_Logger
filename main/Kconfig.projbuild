@@ -32,13 +32,13 @@ config EDL_OLED_CONTRAST
     range 0 255
     default 32
 config EDL_UART_TX_GPIO
-    int "UART1 TX -> USB-TTL RXD"
+    int "UART0 TX -> onboard USB-UART RXD"
     range 0 48
-    default 17
+    default 43
 config EDL_UART_RX_GPIO
-    int "UART1 RX <- USB-TTL TXD (3.3 V logic)"
+    int "UART0 RX <- onboard USB-UART TXD"
     range 0 48
-    default 18
+    default 44
 config EDL_INITIAL_UTC
     string "Initial RTC UTC (empty uses build time), YYYY-MM-DDTHH:MM:SSZ"
     default ""

@@ -138,7 +138,7 @@ void uart_task(void *argument) {
 	ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
 	state.configuration = (uart_setup_t){.adapter = uart_esp_create(&state.hardware, APP_UART_PORT, CONFIG_EDL_UART_TX_GPIO, CONFIG_EDL_UART_RX_GPIO, 2048), .baud_rate = APP_UART_BAUD, .rx_buffer = state.rx, .rx_buffer_capacity = sizeof(state.rx), .tx_buffer = state.tx, .tx_buffer_capacity = sizeof(state.tx), .callback_context = &state, .on_receive = received, .on_transmit = transmitted};
 	if (!initialize(&state))
-		printf("Environmental Data Logger: UART1 initialization failed; check menuconfig\n");
+		printf("Environmental Data Logger: UART0 initialization failed; check menuconfig\n");
 	for (;;) {
 		pump(&state);
 		app_watchdog_progress(&app->watchdog, APP_WATCHDOG_UART);
