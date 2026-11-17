@@ -17,6 +17,7 @@ typedef struct uart_state_t {
 	bool overflow;
 	bool tx_busy;
 	bool synchronize;
+	bool skip_lf;
 	uint64_t active_until;
 	uint64_t tx_started;
 	uint64_t retry_at;
@@ -31,15 +32,21 @@ static void received(void *context, void *argument) {
 	uart_state_t *state = context;
 	const uint8_t *bytes = argument;
 	if (app_now_ms() >= state->active_until) {
+		state->skip_lf = false;
 		state->synchronize = true;
 		state->length = 0;
 		state->overflow = false;
 	}
 	state->active_until = app_now_ms() + APP_UART_ACTIVE_MS;
 	for (size_t i = 0; i < uart_get_received_size(&state->uart); ++i) {
-		const uint8_t character = bytes[i];
-		if (character == '\r')
+		uint8_t character = bytes[i];
+		/* Treat CRLF as one terminator, including across receive chunks. */
+		const bool skip = state->skip_lf && character == '\n';
+		state->skip_lf = character == '\r';
+		if (skip)
 			continue;
+		if (character == '\r')
+			character = '\n';
 		if (state->synchronize) {
 			if (character == '\n') {
 				state->synchronize = false;
@@ -86,6 +93,7 @@ static bool initialize(uart_state_t *state) {
 	state->length = 0;
 	state->overflow = false;
 	state->synchronize = false;
+	state->skip_lf = false;
 	const bool initialized = uart_init(&state->uart, &state->configuration) == UART_RESULT_OK;
 	/* Only the port owner configures sleep policy; all RX/TX stays in uart_t. */
 	const uart_wakeup_cfg_t wake = {.wakeup_mode = UART_WK_MODE_ACTIVE_THRESH, .rx_edge_threshold = 3};
@@ -117,6 +125,7 @@ static void pump(uart_state_t *state) {
 	if (result != UART_RESULT_OK && result != UART_RESULT_BUSY) {
 		state->length = 0;
 		state->overflow = false;
+		state->skip_lf = false;
 		state->synchronize = true;
 		/* Reset the receive stream after an overflow; commands spanning it are invalid. */
 		(void)uart_reset_receive(&state->uart);
@@ -157,6 +166,7 @@ void uart_task(void *argument) {
 				/* All producers are quiescent. Manager resumes us on every exit,
 				 * including a rejected sleep or a command arriving during handshake. */
 				xQueueReceive(app->uart_controls, &control, portMAX_DELAY);
+				state.skip_lf = false;
 				state.length = 0;
 				state.overflow = false;
 				if (control == UART_RESUME_INPUT) {
